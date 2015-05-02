@@ -1,8 +1,11 @@
-/* Stackicons-Social CSS Construction Kit v1.0 | MIT License | <http://stackicons.com> 
+/* Stackicons-Social CSS Construction Kit v1.0 | MIT License | <http://stackicons.com>
    Copyright (c) 2014 by Parker Bennett @parkerbennett @stackicons */
 
 // Make sure the charset is set appropriately
 @charset "UTF-8";
+
+// Define font path, that way we can change it if needed
+$stackicons-font-path: "../fonts/Stackicons";
 
 // font
 @import "fonts-stackicons-social"; // make sure the font path in this file is right
@@ -30,6 +33,6 @@
 
 @import "multi-color-css-stackicons-social"; // @each statements here list all brands (trim as needed)
 
-// optional - comment-out if you don't need to override button shapes per icon... 
+// optional - comment-out if you don't need to override button shapes per icon...
 // ("st.icon-only" class is generated separately by the file above.)
 @import "multi-color-override-shapes-stackicons-social"; // @each statement here lists brands (trim as needed)

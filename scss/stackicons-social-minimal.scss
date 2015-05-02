@@ -1,6 +1,8 @@
 // Make sure the charset is set appropriately
 @charset "UTF-8";
 
+$stackicons-font-path: "../fonts/Stackicons";
+
 @import "stackicons-social-minimal/fonts-stackicons-social-minimal"; // make sure the font path in this file is right
 
 // variables
@@ -26,6 +28,6 @@
 
 @import "stackicons-social-minimal/multi-color-css-stackicons-social-minimal"; // @each statements here list brands - trim as needed
 
-// optional - comment-out if you don't need to override button shapes per icon. 
+// optional - comment-out if you don't need to override button shapes per icon.
 // ("st.icon-only" class is generated separately by the file above.)
 @import "stackicons-social-minimal/multi-color-override-shapes-stackicons-social-minimal"; // @each statement here lists brands - trim as needed

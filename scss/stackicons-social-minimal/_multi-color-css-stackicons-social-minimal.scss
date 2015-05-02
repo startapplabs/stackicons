@@ -1,4 +1,5 @@
-@import "multi-color-kit-stackicons-social";
+// Not used, causing gulp error
+// @import "multi-color-kit-stackicons-social";
 
 // **** BRAAAAND CLASSES... **** /
 
@@ -14,18 +15,18 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
 
 */
 
-// We break down the list by number of stacked elements 
-// needed for the "multi-color" version of each brand. 
+// We break down the list by number of stacked elements
+// needed for the "multi-color" version of each brand.
 // For most it's a solid background with a white icon:
 
 // ******************** /
 // ******************** /
 
 // 2 ELEMENTS (c0, c1):
-// Loop through list of the brands that use 2 elements: 
+// Loop through list of the brands that use 2 elements:
 // $(brand)-c0 and $(brand)-c1 only -- no extra spans...
 
-// Un-comment the appropriate @each statment below... 
+// Un-comment the appropriate @each statment below...
 // (you can also create your own subset here and elsewhere)
 
 // Stackicons-Social-Minimal (subsets the most widely used icons):
@@ -41,16 +42,16 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
 
   // c0 (:before)
   .st-multi-color .st-icon-#{$brand}:before,
-  .st-multi-color.st-icon-#{$brand}:before { 
+  .st-multi-color.st-icon-#{$brand}:before {
 
     // universally applied effect to bg...
     @include shadow-effect(bg);
 
-    // functionally, all buttons have the same default 
+    // functionally, all buttons have the same default
     // button shape, set in _unicodes-stackicons-social;
     // so we could just set it here and save some space:
     // content: $btn-shape-c0-default;
-    // We're keeping them separate here, in case 
+    // We're keeping them separate here, in case
     // we want to use different shapes by brand.
 
     @if $brand == addthis {
@@ -61,7 +62,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-addthis;
       }
-    } 
+    }
 
     @else if $brand == adn {
       content: $adn-c0;
@@ -71,7 +72,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-adn;
       }
-    } 
+    }
 
     @else if $brand == apple {
       content: $apple-c0;
@@ -82,7 +83,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == behance {
       content: $behance-c0;
@@ -92,7 +93,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-behance;
       }
-    } 
+    }
 
     @else if $brand == blogger {
       content: $blogger-c0;
@@ -102,7 +103,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-blogger;
       }
-    } 
+    }
 
     @else if $brand == codepen {
       content: $codepen-c0;
@@ -112,7 +113,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-codepen;
       }
-    } 
+    }
 
     @else if $brand == deviantart {
       content: $deviantart-c0;
@@ -122,7 +123,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-deviantart;
       }
-    } 
+    }
 
     @else if $brand == digg {
       content: $digg-c0;
@@ -132,7 +133,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == dropbox {
       content: $dropbox-c0;
@@ -143,7 +144,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == email2 {
       content: $email-c0;
@@ -166,7 +167,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-multi-color-email-dk;
       }
-    } 
+    }
 
     @else if $brand == evernote {
       content: $evernote-c0;
@@ -176,7 +177,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $evernote-green-alt;
       }
-    } 
+    }
 
     @else if $brand == facebook {
       content: $facebook-c0;
@@ -186,9 +187,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-facebook;
       }
-    } 
+    }
 
-    @else if $brand == facebook-alt { 
+    @else if $brand == facebook-alt {
       content: $facebook-alt-c0;
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($btn-color-facebook-alt);
@@ -196,7 +197,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-facebook-alt;
       }
-    } 
+    }
 
     @else if $brand == github-alt {
       content: $github-alt-c0;
@@ -206,17 +207,17 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-github-alt;
       }
-    } 
+    }
 
     @else if $brand == gittip {
       content: $gittip-c0;
       @if $multi-color-default == brand-color-variant {
-        @include adjust-multi-color($btn-color-gittip); 
+        @include adjust-multi-color($btn-color-gittip);
       }
       @else {
         color: $btn-color-gittip;
       }
-    } 
+    }
 
     @else if $brand == google {
       content: $google-c0;
@@ -226,7 +227,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-google;
       }
-    } 
+    }
 
     @else if $brand == googleplus {
       content: $googleplus-c0;
@@ -236,7 +237,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-googleplus;
       }
-    } 
+    }
 
     @else if $brand == kickstarter {
       content: $kickstarter-c0;
@@ -247,7 +248,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $kickstarter-black;
       }
-    } 
+    }
 
     @else if $brand == lastfm {
       content: $lastfm-c0;
@@ -257,7 +258,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-lastfm;
       }
-    } 
+    }
 
     @else if $brand == linkedin {
       content: $linkedin-c0;
@@ -287,7 +288,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-pandora;
       }
-    } 
+    }
 
     @else if $brand == pinboard {
       content: $pinboard-c0;
@@ -297,7 +298,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-pinboard;
       }
-    } 
+    }
 
     @else if $brand == pinterest {
       content: $pinterest-c0;
@@ -307,7 +308,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-pinterest;
       }
-    } 
+    }
 
     @else if $brand == rdio {
       content: $rdio-c0;
@@ -317,7 +318,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-rdio;
       }
-    } 
+    }
 
     @else if $brand == rss {
       content: $rss-c0;
@@ -327,7 +328,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-rss;
       }
-    } 
+    }
 
     @else if $brand == sharethis {
       content: $sharethis-c0;
@@ -337,7 +338,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-sharethis;
       }
-    } 
+    }
 
     @else if $brand == soundcloud {
       content: $soundcloud-c0;
@@ -347,7 +348,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-soundcloud;
       }
-    } 
+    }
 
     @else if $brand == stumbleupon {
       content: $stumbleupon-c0;
@@ -357,7 +358,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-stumbleupon;
       }
-    } 
+    }
 
     @else if $brand == tumblr {
       content: $tumblr-c0;
@@ -367,7 +368,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-tumblr;
       }
-    } 
+    }
 
     @else if $brand == twitter {
       content: $twitter-c0;
@@ -377,7 +378,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-twitter;
       }
-    } 
+    }
 
     @else if $brand == vimeo {
       content: $vimeo-c0;
@@ -387,7 +388,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-vimeo;
       }
-    } 
+    }
 
     @else if $brand == vine {
       content: $vine-c0;
@@ -397,7 +398,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-vine;
       }
-    } 
+    }
 
     @else if $brand == windows {
       content: $windows-c0;
@@ -407,7 +408,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-windows;
       }
-    } 
+    }
 
     @else if $brand == wordpress {
       content: $wordpress-c0;
@@ -417,7 +418,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-wordpress;
       }
-    } 
+    }
 
     @else if $brand == yahoo {
       content: $yahoo-c0;
@@ -427,7 +428,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-yahoo;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == yahoo-alt {
@@ -443,7 +444,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-yahoo;
       }
-    } 
+    }
 
     @else if $brand == youtube-alt-sm {
       content: $youtube-alt-c0;
@@ -463,7 +464,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $zerply-grey;
       }
-    } 
+    }
 
     // nav elements:
 
@@ -476,7 +477,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-cart;
       }
-    } 
+    }
 
     @else if $brand == menu {
       content: $menu-c0;
@@ -486,7 +487,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-menu;
       }
-    } 
+    }
 
     @else if $brand == menu-alt {
       content: $menu-alt-c0;
@@ -496,7 +497,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-menu;
       }
-    } 
+    }
 
     @else if $brand == menu-alt2 {
       content: $menu-alt2-c0;
@@ -506,7 +507,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-menu;
       }
-    } 
+    }
 
     @else if $brand == more {
       content: $more-c0; // ellipsis...
@@ -516,7 +517,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-more;
       }
-    } 
+    }
 
     @else if $brand == search {
       content: $search-c0;
@@ -526,7 +527,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-search;
       }
-    } 
+    }
 
     @else if $brand == triangle-down {
       content: $triangle-down-c0;
@@ -536,7 +537,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-triangle;
       }
-    } 
+    }
 
     // ( * in stackicons-social-complete)
     @else if $brand == triangle-left {
@@ -547,7 +548,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-triangle;
       }
-    } 
+    }
 
     // ( * in stackicons-social-complete)
     @else if $brand == triangle-right {
@@ -558,7 +559,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-triangle;
       }
-    } 
+    }
 
     // ( * in stackicons-social-complete)
     @else if $brand == triangle-up {
@@ -569,29 +570,29 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-triangle;
       }
-    } 
+    }
 
   } // end c0 (2 elememts)
 
 
-  // do the hover! 
+  // do the hover!
   // c0 (:before - 2 elements)
 
   .st-multi-color .st-icon-#{$brand}:hover:before,
   .st-multi-color.st-icon-#{$brand}:hover:before,
   .st-multi-color .st-icon-#{$brand}:focus:before,
-  .st-multi-color.st-icon-#{$brand}:focus:before { 
+  .st-multi-color.st-icon-#{$brand}:focus:before {
 
     // universally applied effect to bg...
     @include shadow-effect(bg-hover);
-    
+
     // addthis
     @if $brand == addthis {
       @if $multi-color-hover-default == brand-color-hover {
          @include adjust-multi-color-hover($btn-color-addthis);
       }
       @else {
-        color: $btn-color-addthis;  
+        color: $btn-color-addthis;
       }
     } // end addthis
 
@@ -600,8 +601,8 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @if $multi-color-hover-default == brand-color-hover {
          @include adjust-multi-color-hover($btn-color-adn);
       }
-      @else { 
-        color: $btn-color-adn;  
+      @else {
+        color: $btn-color-adn;
       }
     } // end adn
 
@@ -612,7 +613,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($color-multi-color-bg-default);
       }
       @else {
-        color: $color-multi-color-bg-default;  
+        color: $color-multi-color-bg-default;
       }
     } // end apple
 
@@ -622,7 +623,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-behance);
       }
       @else {
-        color: $btn-color-behance;  
+        color: $btn-color-behance;
       }
     } // end behance
 
@@ -632,7 +633,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-blogger);
       }
       @else {
-        color: $btn-color-blogger;  
+        color: $btn-color-blogger;
       }
     } // end blogger
 
@@ -642,7 +643,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-codepen);
       }
       @else {
-        color: $btn-color-codepen;  
+        color: $btn-color-codepen;
       }
     } // end codepen
 
@@ -652,7 +653,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-deviantart);
       }
       @else {
-        color: $btn-color-deviantart;  
+        color: $btn-color-deviantart;
       }
     } // end deviantart
 
@@ -662,7 +663,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($color-multi-color-bg-default);
       }
       @else {
-        color: $color-multi-color-bg-default;  
+        color: $color-multi-color-bg-default;
       }
     } // end digg
 
@@ -673,7 +674,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($color-multi-color-bg-default);
       }
       @else {
-        color: $color-multi-color-bg-default;  
+        color: $color-multi-color-bg-default;
       }
     } // end dropbox
 
@@ -684,7 +685,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($color-multi-color-bg-default);
       }
       @else {
-        color: $color-multi-color-bg-default;  
+        color: $color-multi-color-bg-default;
       }
     } // end email2
 
@@ -705,7 +706,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($evernote-green-alt);
       }
       @else {
-        color: $evernote-green-alt;  
+        color: $evernote-green-alt;
       }
     } // end evernote
 
@@ -715,7 +716,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-facebook);
       }
       @else {
-        color: $btn-color-facebook;  
+        color: $btn-color-facebook;
       }
     } // end facebook
 
@@ -725,7 +726,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-facebook-alt);
       }
       @else {
-        color: $btn-color-facebook-alt;  
+        color: $btn-color-facebook-alt;
       }
     } // end facebook-alt
 
@@ -735,7 +736,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-github-alt);
       }
       @else {
-        color: $btn-color-github-alt;  
+        color: $btn-color-github-alt;
       }
     } // end github-alt
 
@@ -745,7 +746,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-gittip);
       }
       @else {
-        color: $btn-color-gittip;  
+        color: $btn-color-gittip;
       }
     } // end gittip
 
@@ -755,7 +756,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-google);
       }
       @else {
-        color: $btn-color-google;  
+        color: $btn-color-google;
       }
     } // end google
 
@@ -765,7 +766,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-googleplus);
       }
       @else {
-        color: $btn-color-googleplus;  
+        color: $btn-color-googleplus;
       }
     } // end googleplus
 
@@ -775,7 +776,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($black);
       }
       @else {
-        color: $kickstarter-black;  
+        color: $kickstarter-black;
       }
     } // end kickstarter
 
@@ -785,7 +786,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-lastfm);
       }
       @else {
-        color: $btn-color-lastfm;  
+        color: $btn-color-lastfm;
       }
     } // end lastfm
 
@@ -795,7 +796,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-linkedin);
       }
       @else {
-        color: $btn-color-linkedin;  
+        color: $btn-color-linkedin;
       }
     } // end linkedin
 
@@ -805,7 +806,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-myspace);
       }
       @else {
-        color: $btn-color-myspace;  
+        color: $btn-color-myspace;
       }
     } // end myspace
 
@@ -815,7 +816,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-pandora);
       }
       @else {
-        color: $btn-color-pandora;  
+        color: $btn-color-pandora;
       }
     } // end pandora
 
@@ -825,7 +826,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-pinboard);
       }
       @else {
-        color: $btn-color-pinboard;  
+        color: $btn-color-pinboard;
       }
     } // end pinboard
 
@@ -835,7 +836,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-pinterest);
       }
       @else {
-        color: $btn-color-pinterest;  
+        color: $btn-color-pinterest;
       }
     } // end pinterest
 
@@ -845,7 +846,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-rdio);
       }
       @else {
-        color: $btn-color-rdio;  
+        color: $btn-color-rdio;
       }
     } // end rdio
 
@@ -855,7 +856,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-rss);
       }
       @else {
-        color: $btn-color-rss;  
+        color: $btn-color-rss;
       }
     } // end rss
 
@@ -865,7 +866,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-sharethis);
       }
       @else {
-        color: $btn-color-sharethis;  
+        color: $btn-color-sharethis;
       }
     } // end sharethis
 
@@ -875,7 +876,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-stumbleupon);
       }
       @else {
-        color: $btn-color-stumbleupon;  
+        color: $btn-color-stumbleupon;
       }
     } // end stumbleupon
 
@@ -885,7 +886,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-tumblr);
       }
       @else {
-        color: $btn-color-tumblr;  
+        color: $btn-color-tumblr;
       }
     } // end tumblr
 
@@ -895,7 +896,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-twitter);
       }
       @else {
-        color: $btn-color-twitter;  
+        color: $btn-color-twitter;
       }
     } // end twitter
 
@@ -905,7 +906,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-vimeo);
       }
       @else {
-        color: $btn-color-vimeo;  
+        color: $btn-color-vimeo;
       }
     } // end vimeo
 
@@ -915,7 +916,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-vine);
       }
       @else {
-        color: $btn-color-vine;  
+        color: $btn-color-vine;
       }
     } // end vine
 
@@ -925,7 +926,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-windows);
       }
       @else {
-        color: $btn-color-windows;  
+        color: $btn-color-windows;
       }
     } // end windows
 
@@ -935,7 +936,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-wordpress);
       }
       @else {
-        color: $btn-color-wordpress;  
+        color: $btn-color-wordpress;
       }
     } // end wordpress
 
@@ -945,7 +946,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-yahoo);
       }
       @else {
-        color: $btn-color-yahoo;  
+        color: $btn-color-yahoo;
       }
     } // end yahoo
 
@@ -956,7 +957,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-yahoo);
       }
       @else {
-        color: $btn-color-yahoo;  
+        color: $btn-color-yahoo;
       }
     } // end yahoo
 
@@ -966,7 +967,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($youtube-white);
       }
       @else {
-        color: $youtube-white;  
+        color: $youtube-white;
       }
     } // end youtube-alt-sm
 
@@ -977,7 +978,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-youtube-alt2);
       }
       @else {
-        color: $btn-color-youtube-alt2;  
+        color: $btn-color-youtube-alt2;
       }
     } // end youtube-alt2
 
@@ -987,7 +988,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($zerply-grey);
       }
       @else {
-        color: $zerply-grey;  
+        color: $zerply-grey;
       }
     } // end zerply
 
@@ -999,19 +1000,19 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-cart);
       }
       @else {
-        color: $btn-color-cart;  
+        color: $btn-color-cart;
       }
     } // end cart
 
     // menu
-    @else if $brand == menu or 
-             $brand == menu-alt or 
+    @else if $brand == menu or
+             $brand == menu-alt or
              $brand == menu-alt2 {
       @if $multi-color-hover-default == brand-color-hover {
          @include adjust-multi-color-hover($btn-color-menu);
       }
       @else {
-        color: $btn-color-menu;  
+        color: $btn-color-menu;
       }
     } // end menu
 
@@ -1021,7 +1022,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-more);
       }
       @else {
-        color: $btn-color-more;  
+        color: $btn-color-more;
       }
     } // end more
 
@@ -1031,21 +1032,21 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($btn-color-search);
       }
       @else {
-        color: $btn-color-search;  
+        color: $btn-color-search;
       }
     } // end search
 
     // triangle-down
-    @else if $brand == triangle-down or 
+    @else if $brand == triangle-down or
              // * in stackicons-social-complete
-             $brand == triangle-left or 
+             $brand == triangle-left or
              $brand == triangle-right or
              $brand == triangle-up {
       @if $multi-color-hover-default == brand-color-hover {
          @include adjust-multi-color-hover($btn-color-triangle);
       }
       @else {
-        color: $btn-color-triangle;  
+        color: $btn-color-triangle;
       }
     } // end triangle-down
 
@@ -1054,8 +1055,8 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
 
   // c1 (:after - 2 elements)
   .st-multi-color .st-icon-#{$brand}:after,
-  .st-multi-color.st-icon-#{$brand}:after { 
- 
+  .st-multi-color.st-icon-#{$brand}:after {
+
     // universally applied effect to icon...
     @include shadow-effect(icon);
 
@@ -1067,7 +1068,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == adn {
       content: $adn-c1;
@@ -1087,7 +1088,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-apple;
       }
-    } 
+    }
 
     @else if $brand == behance {
       content: $behance-c1;
@@ -1097,7 +1098,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == blogger {
       content: $blogger-c1;
@@ -1107,7 +1108,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == codepen {
       content: $codepen-c1;
@@ -1117,11 +1118,11 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == deviantart {
       @if $deviantart-c0 == $btn-shape-sq {
-        content: $deviantart-c1-alt0; 
+        content: $deviantart-c1-alt0;
       }
       @else if $deviantart-c0 == $btn-shape-r2 {
         content: $deviantart-c1-alt2;
@@ -1151,7 +1152,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-digg;
       }
-    } 
+    }
 
     @else if $brand == dropbox {
       content: $dropbox-c1;
@@ -1161,7 +1162,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-dropbox;
       }
-    } 
+    }
 
     @else if $brand == email2 {
       content: $email-icon; // envelope
@@ -1171,10 +1172,10 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-email;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
-    @else if $brand == email-alt { 
+    @else if $brand == email-alt {
       @if $email-alt-c0 == $btn-shape-sq {
         content: $email-alt-sq;
       }
@@ -1196,7 +1197,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-lt;
       }
-    } 
+    }
 
     @else if $brand == evernote {
       content: $evernote-c1;
@@ -1206,7 +1207,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $evernote-grey-dk;
       }
-    } 
+    }
 
     @else if $brand == facebook {
       @if $facebook-c0 == $btn-shape-cir {
@@ -1221,7 +1222,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == facebook-alt {
       content: $facebook-alt-c1;
@@ -1231,7 +1232,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == gittip {
       content: $gittip-c1;
@@ -1241,7 +1242,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == github-alt {
       content: $github-alt-c1;
@@ -1251,7 +1252,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == google {
       content: $google-c1;
@@ -1261,7 +1262,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == googleplus {
       content: $googleplus-c1;
@@ -1271,7 +1272,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == kickstarter {
       content: $kickstarter-c1;
@@ -1281,7 +1282,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $kickstarter-green;
       }
-    } 
+    }
 
     @else if $brand == lastfm {
       content: $lastfm-c1;
@@ -1291,7 +1292,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == linkedin {
       content: $linkedin-c1;
@@ -1301,7 +1302,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == myspace {
       content: $myspace-c1;
@@ -1311,7 +1312,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $myspace-grey-lt;
       }
-    } 
+    }
 
     @else if $brand == pandora {
       content: $pandora-c1;
@@ -1321,7 +1322,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == pinboard {
       content: $pinboard-c1;
@@ -1331,7 +1332,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == pinterest {
       @if $pinterest-c0 == $btn-shape-cir {
@@ -1346,7 +1347,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == rdio {
       content: $rdio-c1;
@@ -1356,7 +1357,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == rss {
       content: $rss-c1;
@@ -1366,7 +1367,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == sharethis {
       content: $sharethis-c1;
@@ -1376,7 +1377,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == soundcloud {
       content: $soundcloud-c1;
@@ -1386,7 +1387,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == stumbleupon {
       content: $stumbleupon-c1;
@@ -1396,7 +1397,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == tumblr {
       content: $tumblr-c1;
@@ -1406,7 +1407,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == twitter {
       content: $twitter-c1;
@@ -1416,7 +1417,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == vimeo {
       content: $vimeo-c1;
@@ -1426,7 +1427,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == vine {
       content: $vine-c1;
@@ -1436,7 +1437,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == windows {
       content: $windows-c1;
@@ -1446,7 +1447,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == wordpress {
       content: $wordpress-c1;
@@ -1456,7 +1457,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     // * yahoo-alt is in stackicons-social-complete
     @else if $brand == yahoo or $brand == yahoo-alt {
@@ -1467,7 +1468,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == youtube-alt-sm {
       content: $youtube-alt-icon; // "You Tube"
@@ -1477,7 +1478,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-black;
       }
-    } 
+    }
 
     @else if $brand == zerply {
       content: $zerply-c1;
@@ -1487,7 +1488,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $zerply-green;
       }
-    } 
+    }
 
     // nav elements:
 
@@ -1500,7 +1501,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == menu {
       content: $menu-c1;
@@ -1510,7 +1511,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == menu-alt {
       content: $menu-alt-c1;
@@ -1520,7 +1521,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == menu-alt2 {
       content: $menu-alt2-c1;
@@ -1530,7 +1531,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == more {
       content: $more-c1;
@@ -1540,7 +1541,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == search {
       content: $search-c1;
@@ -1560,7 +1561,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == triangle-left {
@@ -1571,7 +1572,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == triangle-right {
@@ -1582,7 +1583,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == triangle-up {
@@ -1593,7 +1594,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
   } // end c1 (:after - 2 elements)
 
@@ -1604,15 +1605,15 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-multi-color .st-icon-#{$brand}:hover:after,
   .st-multi-color.st-icon-#{$brand}:hover:after,
   .st-multi-color .st-icon-#{$brand}:focus:after,
-  .st-multi-color.st-icon-#{$brand}:focus:after {  
+  .st-multi-color.st-icon-#{$brand}:focus:after {
 
     @include shadow-effect(icon-hover);
-    
+
     // most brands have the same white icon...
 
-    @if $brand == addthis or 
-        $brand == adn or 
-        $brand == behance or 
+    @if $brand == addthis or
+        $brand == adn or
+        $brand == behance or
         $brand == blogger or
         $brand == codepen or
         $brand == facebook or
@@ -1629,15 +1630,15 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         $brand == rdio or
         $brand == rss or
         $brand == sharethis or
-        $brand == soundcloud or 
+        $brand == soundcloud or
         $brand == stumbleupon or
         $brand == tumblr or
         $brand == twitter or
         $brand == vimeo or
-        $brand == vine or 
+        $brand == vine or
         $brand == windows or
         $brand == wordpress or
-        $brand == yahoo or 
+        $brand == yahoo or
         // * in stackicons-social-complete
         $brand == yahoo-alt {
       @if $multi-color-hover-default == brand-color-hover {
@@ -1646,7 +1647,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == apple {
       @if $multi-color-hover-default == brand-color-hover {
@@ -1655,7 +1656,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-apple;
       }
-    } 
+    }
 
     @else if $brand == deviantart {
       @if $multi-color-hover-default == brand-color-hover {
@@ -1673,7 +1674,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-digg;
       }
-    } 
+    }
 
     @else if $brand == dropbox {
       @if $multi-color-hover-default == brand-color-hover {
@@ -1682,7 +1683,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-dropbox;
       }
-    } 
+    }
 
     @else if $brand == email2 {
       @if $multi-color-hover-default == brand-color-hover {
@@ -1691,7 +1692,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-email;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == email-alt { // geometric top flap
@@ -1701,7 +1702,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-lt;
       }
-    } 
+    }
 
     @else if $brand == evernote {
       @if $multi-color-hover-default == brand-color-hover {
@@ -1710,7 +1711,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $evernote-grey-dk;
       }
-    } 
+    }
 
     @else if $brand == kickstarter {
       @if $multi-color-hover-default == brand-color-hover {
@@ -1719,7 +1720,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $kickstarter-green;
       }
-    } 
+    }
 
     @else if $brand == youtube-alt-sm {
       @if $multi-color-hover-default == brand-color-hover {
@@ -1728,7 +1729,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-black;
       }
-    } 
+    }
 
     @else if $brand == zerply {
       @if $multi-color-hover-default == brand-color-hover {
@@ -1737,18 +1738,18 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $zerply-green;
       }
-    } 
+    }
 
     // nav elements:
              // * in stackicons-social-complete...
     @else if $brand == cart or
-             $brand == menu or 
+             $brand == menu or
              $brand == menu-alt or $brand == menu-alt2 or
              $brand == more or
-             $brand == search or 
+             $brand == search or
              $brand == triangle-down or
              // * in stackicons-social-complete...
-             $brand == triangle-left or 
+             $brand == triangle-left or
              $brand == triangle-right or
              $brand == triangle-up {
       @if $multi-color-hover-default == brand-color-hover {
@@ -1757,11 +1758,11 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
   } // end c1 (:hover:after - 2 elements)
 
-  
+
   // *********************************/
 
   // **** ICON-ONLY (2 elements) **** /
@@ -1778,12 +1779,12 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:before,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:before,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:before,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:before { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:before {
 
-    // For the most part, we negate the c0 button background,  
+    // For the most part, we negate the c0 button background,
     // and do c1 as icon-only for one-color icons...
 
-    content: "" !important; 
+    content: "" !important;
     // !important needed to override shape class on indivicual icon
     text-shadow: none;
 
@@ -1799,7 +1800,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-email;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == email-alt {
@@ -1811,7 +1812,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-multi-color-email-dk;
       }
-    } 
+    }
 
     @else if $brand == pinterest {
       content: $btn-shape-cir-inner !important; // red circle
@@ -1822,7 +1823,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-pinterest;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == yahoo-alt {
@@ -1834,7 +1835,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-yahoo;
       }
-    } 
+    }
 
     // simplified 2-element version of youtube-alt
     @else if $brand == youtube-alt-sm {
@@ -1846,7 +1847,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-black;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == youtube-alt2 {
@@ -1858,7 +1859,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-red;
       }
-    } 
+    }
   } // end c0 (:before)
 
 
@@ -1888,7 +1889,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:focus:before,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:focus:before,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:focus:before,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:before { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:before {
 
     @if $brand == email2 {
       @include shadow-effect(icon-only-hover);
@@ -1898,7 +1899,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-email;
       }
-    } 
+    }
 
     @else if $brand == email-alt {
       @include shadow-effect(icon-only-hover);
@@ -1908,17 +1909,17 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-multi-color-email-dk;
       }
-    } 
+    }
 
     @else if $brand == pinterest {
-      @include shadow-effect(icon-only-hover); 
+      @include shadow-effect(icon-only-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($btn-color-pinterest);
       }
       @else {
         color: $btn-color-pinterest;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == yahoo-alt {
@@ -1929,7 +1930,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-yahoo;
       }
-    } 
+    }
 
     @else if $brand == youtube-alt-sm {
       @include shadow-effect(icon-only-hover);
@@ -1939,7 +1940,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-black;
       }
-    } 
+    }
 
   } // end c0:hover (:hover:before)
 
@@ -1957,18 +1958,18 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:after,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:after,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:after { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:after {
 
     // universally applied effect to icon...
     @include shadow-effect(icon-only);
-    
+
     // addthis
     @if $brand == addthis {
       @if $multi-color-default == brand-color-variant {
          @include adjust-multi-color($icon-color-addthis);
       }
       @else {
-        color: $icon-color-addthis;  
+        color: $icon-color-addthis;
       }
     } // end addthis
 
@@ -1978,7 +1979,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-adn);
       }
       @else {
-        color: $icon-color-adn;  
+        color: $icon-color-adn;
       }
     } // end adn
 
@@ -1988,7 +1989,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-apple);
       }
       @else {
-        color: $icon-color-apple;  
+        color: $icon-color-apple;
       }
     } // end apple
 
@@ -1998,7 +1999,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-behance);
       }
       @else {
-        color: $icon-color-behance;  
+        color: $icon-color-behance;
       }
     } // end behance
 
@@ -2008,7 +2009,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-blogger);
       }
       @else {
-        color: $icon-color-blogger;  
+        color: $icon-color-blogger;
       }
     } // end blogger
 
@@ -2018,7 +2019,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-codepen);
       }
       @else {
-        color: $icon-color-codepen;  
+        color: $icon-color-codepen;
       }
     } // end codepen
 
@@ -2041,7 +2042,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-digg);
       }
       @else {
-        color: $icon-color-digg;  
+        color: $icon-color-digg;
       }
     } // end digg
 
@@ -2056,7 +2057,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: lighten($icon-color-email, 9);
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == email-alt {
@@ -2067,7 +2068,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-lt;
       }
-    } 
+    }
 
     // evernote is unchanged from .st-multi-color
 
@@ -2077,7 +2078,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-facebook);
       }
       @else {
-        color: $icon-color-facebook;  
+        color: $icon-color-facebook;
       }
     } // end facebook
 
@@ -2087,7 +2088,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-facebook-alt);
       }
       @else {
-        color: $icon-color-facebook-alt;  
+        color: $icon-color-facebook-alt;
       }
     } // end facebook-alt
 
@@ -2097,7 +2098,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-github-alt);
       }
       @else {
-        color: $icon-color-github-alt;  
+        color: $icon-color-github-alt;
       }
     } // end github-alt
 
@@ -2107,7 +2108,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-gittip);
       }
       @else {
-        color: $icon-color-gittip;  
+        color: $icon-color-gittip;
       }
     } // end gittip
 
@@ -2117,7 +2118,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-google);
       }
       @else {
-        color: $icon-color-google;  
+        color: $icon-color-google;
       }
     } // end google
 
@@ -2127,7 +2128,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-googleplus);
       }
       @else {
-        color: $icon-color-googleplus;  
+        color: $icon-color-googleplus;
       }
     } // end googleplus
 
@@ -2137,7 +2138,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-kickstarter);
       }
       @else {
-        color: $icon-color-kickstarter;  
+        color: $icon-color-kickstarter;
       }
     } // end kickstarter
 
@@ -2147,7 +2148,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-lastfm);
       }
       @else {
-        color: $icon-color-lastfm;  
+        color: $icon-color-lastfm;
       }
     } // end lastfm
 
@@ -2157,7 +2158,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-linkedin);
       }
       @else {
-        color: $icon-color-linkedin;  
+        color: $icon-color-linkedin;
       }
     } // end linkedin
 
@@ -2167,7 +2168,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-myspace);
       }
       @else {
-        color: $icon-color-myspace;  
+        color: $icon-color-myspace;
       }
     } // end myspace
 
@@ -2177,7 +2178,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-pandora);
       }
       @else {
-        color: $icon-color-pandora;  
+        color: $icon-color-pandora;
       }
     } // end pandora
 
@@ -2187,7 +2188,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-pinboard);
       }
       @else {
-        color: $icon-color-pinboard;  
+        color: $icon-color-pinboard;
       }
     } // end pinboard
 
@@ -2198,7 +2199,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($color-multi-color-icon-default);
       }
       @else {
-        color: $color-multi-color-icon-default;  
+        color: $color-multi-color-icon-default;
       }
     } // end pinterest
 
@@ -2208,7 +2209,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-rdio);
       }
       @else {
-        color: $icon-color-rdio;  
+        color: $icon-color-rdio;
       }
     } // end rdio
 
@@ -2218,7 +2219,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-rss);
       }
       @else {
-        color: $icon-color-rss;  
+        color: $icon-color-rss;
       }
     } // end rss
 
@@ -2228,7 +2229,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-sharethis);
       }
       @else {
-        color: $icon-color-sharethis;  
+        color: $icon-color-sharethis;
       }
     } // end sharethis
 
@@ -2238,7 +2239,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-soundcloud);
       }
       @else {
-        color: $icon-color-soundcloud;  
+        color: $icon-color-soundcloud;
       }
     } // end soundcloud
 
@@ -2248,7 +2249,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-stumbleupon);
       }
       @else {
-        color: $icon-color-stumbleupon;  
+        color: $icon-color-stumbleupon;
       }
     } // end stumbleupon
 
@@ -2258,7 +2259,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-tumblr);
       }
       @else {
-        color: $icon-color-tumblr;  
+        color: $icon-color-tumblr;
       }
     } // end tumblr
 
@@ -2268,7 +2269,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-twitter);
       }
       @else {
-        color: $icon-color-twitter;  
+        color: $icon-color-twitter;
       }
     } // end twitter
 
@@ -2278,7 +2279,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-vimeo);
       }
       @else {
-        color: $icon-color-vimeo;  
+        color: $icon-color-vimeo;
       }
     } // end vimeo
 
@@ -2288,7 +2289,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-vine);
       }
       @else {
-        color: $icon-color-vine;  
+        color: $icon-color-vine;
       }
     } // end vine
 
@@ -2298,7 +2299,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-windows);
       }
       @else {
-        color: $icon-color-windows;  
+        color: $icon-color-windows;
       }
     } // end windows
 
@@ -2308,7 +2309,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-wordpress);
       }
       @else {
-        color: $icon-color-wordpress;  
+        color: $icon-color-wordpress;
       }
     } // end wordpress
 
@@ -2317,7 +2318,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-yahoo);
       }
       @else {
-        color: $icon-color-yahoo;  
+        color: $icon-color-yahoo;
       }
     } // end yahoo
 
@@ -2328,7 +2329,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($color-multi-color-icon-default);
       }
       @else {
-        color: $color-multi-color-icon-default;  
+        color: $color-multi-color-icon-default;
       }
     } // end yahoo
 
@@ -2338,7 +2339,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($youtube-white);
       }
       @else {
-        color: $youtube-white;  
+        color: $youtube-white;
       }
     } // end youtube-alt-sm
 
@@ -2348,7 +2349,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-zerply);
       }
       @else {
-        color: $icon-color-zerply;  
+        color: $icon-color-zerply;
       }
     } // end zerply
 
@@ -2360,7 +2361,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-cart);
       }
       @else {
-        color: $icon-color-cart;  
+        color: $icon-color-cart;
       }
     } // end cart
 
@@ -2370,7 +2371,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-menu);
       }
       @else {
-        color: $icon-color-menu;  
+        color: $icon-color-menu;
       }
     } // end menu
 
@@ -2381,7 +2382,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-menu);
       }
       @else {
-        color: $icon-color-menu;  
+        color: $icon-color-menu;
       }
     } // end menu-alt
 
@@ -2392,7 +2393,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-menu);
       }
       @else {
-        color: $icon-color-menu;  
+        color: $icon-color-menu;
       }
     } // end menu-alt2
 
@@ -2402,7 +2403,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-more);
       }
       @else {
-        color: $icon-color-more;  
+        color: $icon-color-more;
       }
     } // end more
 
@@ -2412,7 +2413,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-search);
       }
       @else {
-        color: $icon-color-search;  
+        color: $icon-color-search;
       }
     } // end search
 
@@ -2422,19 +2423,19 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color($icon-color-triangle);
       }
       @else {
-        color: $icon-color-triangle;  
+        color: $icon-color-triangle;
       }
     } // end triangle-down
 
     // triangle-left, -right, -up
-    @else if $brand == triangle-left or 
+    @else if $brand == triangle-left or
              $brand == triangle-right or
              $brand == triangle-up {
       @if $multi-color-default == brand-color-variant {
          @include adjust-multi-color($icon-color-triangle);
       }
       @else {
-        color: $icon-color-triangle;  
+        color: $icon-color-triangle;
       }
     } // end triangle-left
 
@@ -2465,7 +2466,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:focus:after,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:focus:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:focus:after,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:after { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:after {
 
     // universally applied effect to icon...
     @include shadow-effect(icon-only-hover);
@@ -2476,7 +2477,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-addthis);
       }
       @else {
-        color: $icon-color-addthis;  
+        color: $icon-color-addthis;
       }
     } // end addthis
 
@@ -2486,7 +2487,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-adn);
       }
       @else {
-        color: $icon-color-adn;  
+        color: $icon-color-adn;
       }
     } // end adn
 
@@ -2497,7 +2498,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-apple);
       }
       @else {
-        color: $icon-color-apple;  
+        color: $icon-color-apple;
       }
     } // end apple
 
@@ -2507,7 +2508,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-behance);
       }
       @else {
-        color: $icon-color-behance;  
+        color: $icon-color-behance;
       }
     } // end behance
 
@@ -2517,7 +2518,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-blogger);
       }
       @else {
-        color: $icon-color-blogger;  
+        color: $icon-color-blogger;
       }
     } // end blogger
 
@@ -2527,7 +2528,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-codepen);
       }
       @else {
-        color: $icon-color-codepen;  
+        color: $icon-color-codepen;
       }
     } // end codepen
 
@@ -2548,7 +2549,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-digg);
       }
       @else {
-        color: $icon-color-digg;  
+        color: $icon-color-digg;
       }
     } // end digg
 
@@ -2562,7 +2563,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: lighten($icon-color-email, 9);
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == email-alt {
@@ -2572,7 +2573,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-lt;
       }
-    } 
+    }
 
     // evernote is unchanged from .st-multi-color
 
@@ -2582,7 +2583,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-facebook);
       }
       @else {
-        color: $icon-color-facebook;  
+        color: $icon-color-facebook;
       }
     } // end facebook
 
@@ -2592,7 +2593,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-facebook-alt);
       }
       @else {
-        color: $icon-color-facebook-alt;  
+        color: $icon-color-facebook-alt;
       }
     } // end facebook-alt
 
@@ -2602,7 +2603,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-github-alt);
       }
       @else {
-        color: $icon-color-github-alt;  
+        color: $icon-color-github-alt;
       }
     } // end github-alt
 
@@ -2612,7 +2613,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-gittip);
       }
       @else {
-        color: $icon-color-gittip;  
+        color: $icon-color-gittip;
       }
     } // end gittip
 
@@ -2622,7 +2623,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-google);
       }
       @else {
-        color: $icon-color-google;  
+        color: $icon-color-google;
       }
     } // end google
 
@@ -2632,7 +2633,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-googleplus);
       }
       @else {
-        color: $icon-color-googleplus;  
+        color: $icon-color-googleplus;
       }
     } // end googleplus
 
@@ -2642,7 +2643,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-kickstarter);
       }
       @else {
-        color: $icon-color-kickstarter;  
+        color: $icon-color-kickstarter;
       }
     } // end kickstarter
 
@@ -2652,7 +2653,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-lastfm);
       }
       @else {
-        color: $icon-color-lastfm;  
+        color: $icon-color-lastfm;
       }
     } // end lastfm
 
@@ -2662,7 +2663,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-linkedin);
       }
       @else {
-        color: $icon-color-linkedin;  
+        color: $icon-color-linkedin;
       }
     } // end linkedin
 
@@ -2672,7 +2673,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-myspace);
       }
       @else {
-        color: $icon-color-myspace;  
+        color: $icon-color-myspace;
       }
     } // end myspace
 
@@ -2682,7 +2683,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-pandora);
       }
       @else {
-        color: $icon-color-pandora;  
+        color: $icon-color-pandora;
       }
     } // end pandora
 
@@ -2692,7 +2693,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-pinboard);
       }
       @else {
-        color: $icon-color-pinboard;  
+        color: $icon-color-pinboard;
       }
     } // end pinboard
 
@@ -2702,7 +2703,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-rdio);
       }
       @else {
-        color: $icon-color-rdio;  
+        color: $icon-color-rdio;
       }
     } // end rdio
 
@@ -2712,7 +2713,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-rss);
       }
       @else {
-        color: $icon-color-rss;  
+        color: $icon-color-rss;
       }
     } // end rss
 
@@ -2722,7 +2723,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-sharethis);
       }
       @else {
-        color: $icon-color-sharethis;  
+        color: $icon-color-sharethis;
       }
     } // end sharethis
 
@@ -2732,7 +2733,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-soundcloud);
       }
       @else {
-        color: $icon-color-soundcloud;  
+        color: $icon-color-soundcloud;
       }
     } // end soundcloud
 
@@ -2742,7 +2743,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-stumbleupon);
       }
       @else {
-        color: $icon-color-stumbleupon;  
+        color: $icon-color-stumbleupon;
       }
     } // end stumbleupon
 
@@ -2752,7 +2753,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-tumblr);
       }
       @else {
-        color: $icon-color-tumblr;  
+        color: $icon-color-tumblr;
       }
     } // end tumblr
 
@@ -2762,7 +2763,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-twitter);
       }
       @else {
-        color: $icon-color-twitter;  
+        color: $icon-color-twitter;
       }
     } // end twitter
 
@@ -2772,7 +2773,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-vimeo);
       }
       @else {
-        color: $icon-color-vimeo;  
+        color: $icon-color-vimeo;
       }
     } // end vimeo
 
@@ -2782,7 +2783,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-vine);
       }
       @else {
-        color: $icon-color-vine;  
+        color: $icon-color-vine;
       }
     } // end vine
 
@@ -2792,7 +2793,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-windows);
       }
       @else {
-        color: $icon-color-windows;  
+        color: $icon-color-windows;
       }
     } // end windows
 
@@ -2802,7 +2803,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-wordpress);
       }
       @else {
-        color: $icon-color-wordpress;  
+        color: $icon-color-wordpress;
       }
     } // end wordpress
 
@@ -2812,7 +2813,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-yahoo);
       }
       @else {
-        color: $icon-color-yahoo;  
+        color: $icon-color-yahoo;
       }
     } // end yahoo
 
@@ -2823,7 +2824,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($color-multi-color-icon-default);
       }
       @else {
-        color: $color-multi-color-icon-default;  
+        color: $color-multi-color-icon-default;
       }
     } // end yahoo
 
@@ -2833,7 +2834,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($youtube-white);
       }
       @else {
-        color: $youtube-white;  
+        color: $youtube-white;
       }
     } // end youtube-alt-sm
 
@@ -2843,7 +2844,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-zerply);
       }
       @else {
-        color: $icon-color-zerply;  
+        color: $icon-color-zerply;
       }
     } // end zerply
 
@@ -2855,19 +2856,19 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-cart);
       }
       @else {
-        color: $icon-color-cart;  
+        color: $icon-color-cart;
       }
     } // end cart
 
     // menu
     @else if $brand == menu or
-             $brand == menu-alt or 
+             $brand == menu-alt or
              $brand == menu-alt2 {
       @if $multi-color-hover-default == brand-color-hover {
          @include adjust-multi-color-hover($icon-color-menu);
       }
       @else {
-        color: $icon-color-menu;  
+        color: $icon-color-menu;
       }
     } // end menu
 
@@ -2877,7 +2878,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-more);
       }
       @else {
-        color: $icon-color-more;  
+        color: $icon-color-more;
       }
     } // end more
 
@@ -2887,7 +2888,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-search);
       }
       @else {
-        color: $icon-color-search;  
+        color: $icon-color-search;
       }
     } // end search
 
@@ -2897,19 +2898,19 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
          @include adjust-multi-color-hover($icon-color-triangle);
       }
       @else {
-        color: $icon-color-triangle;  
+        color: $icon-color-triangle;
       }
     } // end triangle-down
 
     // triangle-left, -right, -up ( * in stackicons-social-complete)
-    @else if $brand == triangle-left or 
+    @else if $brand == triangle-left or
              $brand == triangle-right or
              $brand == triangle-up {
       @if $multi-color-hover-default == brand-color-hover {
          @include adjust-multi-color-hover($icon-color-triangle);
       }
       @else {
-        color: $icon-color-triangle;  
+        color: $icon-color-triangle;
       }
     } // end triangle-left
 
@@ -2924,27 +2925,27 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
 
 // 3 ELEMENTS (c0, c1, c2):
 
-// Loop through list of the brands that use 3 elements: 
-// $(brand)-c0, $(brand)-c1, $(brand)-c2 -- this means 
-// adding an extra <span></span> in the markup -- 
+// Loop through list of the brands that use 3 elements:
+// $(brand)-c0, $(brand)-c1, $(brand)-c2 -- this means
+// adding an extra <span></span> in the markup --
 // except for .st-shape-icon versions, which can do without.
 
 // uncomment the appropriate @each statement below...
 
 // Stackicons-Social-Minimal:
-@each $brand in flickr { 
+@each $brand in flickr {
 
 // Standard:
-// @each $brand in amazon, android, flattr, flickr, forrst, paypal, paypal2, skype, spotify, xing, yelp { 
+// @each $brand in amazon, android, flattr, flickr, forrst, paypal, paypal2, skype, spotify, xing, yelp {
 
 // *Stackicons-Social-Complete
 // adds deviantart-alt, email-alt2, pinterest-alt, youtube-alt2
-// @each $brand in amazon, android, deviantart-alt, email-alt2, flattr, flickr, forrst, paypal, paypal2, pinterest-alt, skype, spotify, xing, yelp, yelp-alt, youtube-alt2 { 
+// @each $brand in amazon, android, deviantart-alt, email-alt2, flattr, flickr, forrst, paypal, paypal2, pinterest-alt, skype, spotify, xing, yelp, yelp-alt, youtube-alt2 {
 
 
   // c0 (:before - 1 of 3 elements)
   .st-multi-color .st-icon-#{$brand}:before,
-  .st-multi-color.st-icon-#{$brand}:before { 
+  .st-multi-color.st-icon-#{$brand}:before {
 
     // universally applied effect to bg...
     @include shadow-effect(bg);
@@ -2969,7 +2970,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == deviantart-alt {
       content: $deviantart-alt-c0;
@@ -2991,7 +2992,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-mix;
       }
-    } 
+    }
 
     @else if $brand == flattr {
       content: $flattr-c0;
@@ -3002,7 +3003,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == flickr {
       content: $flickr-c0;
@@ -3013,7 +3014,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == forrst {
       content: $forrst-c0;
@@ -3023,7 +3024,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $forrst-green-dk;
       }
-    } 
+    }
 
     @else if $brand == paypal {
       content: $paypal-c0;
@@ -3034,7 +3035,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == paypal2 {
       content: $paypal-c0;
@@ -3045,7 +3046,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-blue-alt;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == pinterest-alt {
@@ -3057,7 +3058,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == spotify {
       content: $spotify-c0;
@@ -3067,7 +3068,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $spotify-grey;
       }
-    } 
+    }
 
     @else if $brand == skype {
       content: $skype-c0;
@@ -3077,7 +3078,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == xing {
       content: $xing-c0;
@@ -3088,7 +3089,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == yelp {
       content: $yelp-c0;
@@ -3098,7 +3099,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-yelp;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == yelp-alt {
@@ -3109,11 +3110,11 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $yelp-grey;
       }
-    } 
+    }
 
-    // youtube-alt2 uses whole button as "screen" bg for play triangle 
+    // youtube-alt2 uses whole button as "screen" bg for play triangle
     @else if $brand == youtube-alt2 {
-      content: $youtube-alt2-c0; 
+      content: $youtube-alt2-c0;
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($youtube-white);
       }
@@ -3128,20 +3129,20 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-multi-color .st-icon-#{$brand}:hover:before,
   .st-multi-color.st-icon-#{$brand}:hover:before,
   .st-multi-color .st-icon-#{$brand}:focus:before,
-  .st-multi-color.st-icon-#{$brand}:focus:before { 
+  .st-multi-color.st-icon-#{$brand}:focus:before {
 
     // universally applied effect to bg...
     @include shadow-effect(bg-hover);
 
     // these share the same generic light bg...
 
-    @if $brand == android or 
+    @if $brand == android or
              $brand == flattr or
              $brand == flickr or
-             $brand == paypal or 
+             $brand == paypal or
              // * in stackicons-social-complete
-             $brand == pinterest-alt or 
-             $brand == skype or 
+             $brand == pinterest-alt or
+             $brand == skype or
              $brand == xing {
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($color-multi-color-bg-default);
@@ -3149,7 +3150,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-bg-default;
       }
-    } 
+    }
 
     @else if $brand == amazon {
       @if $multi-color-hover-default == brand-color-hover {
@@ -3178,7 +3179,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-mix;
       }
-    } 
+    }
 
     @else if $brand == forrst {
       @if $multi-color-hover-default == brand-color-hover {
@@ -3187,7 +3188,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $forrst-green-dk;
       }
-    } 
+    }
 
     @else if $brand == paypal2 {
       @if $multi-color-hover-default == brand-color-hover {
@@ -3196,7 +3197,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-blue-alt;
       }
-    } 
+    }
 
     @else if $brand == spotify {
       @if $multi-color-hover-default == brand-color-hover {
@@ -3205,7 +3206,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $spotify-grey;
       }
-    } 
+    }
 
     @else if $brand == yelp {
       @if $multi-color-hover-default == brand-color-hover {
@@ -3214,7 +3215,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-yelp;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == yelp-alt {
@@ -3224,9 +3225,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $yelp-grey;
       }
-    } 
+    }
 
-    // youtube-alt2 uses whole button as "screen" bg for play triangle 
+    // youtube-alt2 uses whole button as "screen" bg for play triangle
     @else if $brand == youtube-alt2 {
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($youtube-white);
@@ -3238,11 +3239,11 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
 
   } // end c0:hover (1 of 3 elements)
 
- 
-  // c1 (span:before - 2 of 3 elements) 
+
+  // c1 (span:before - 2 of 3 elements)
 
   .st-multi-color .st-icon-#{$brand} > span:before,
-  .st-multi-color.st-icon-#{$brand} > span:before { 
+  .st-multi-color.st-icon-#{$brand} > span:before {
 
     // no universal shadow-effect, applied individually...
 
@@ -3255,13 +3256,13 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $amazon-black;
       }
-    } 
+    }
 
     @else if $brand == android {
       content: $android-c2; // white eyes (optional)
       // eyes stay white regardless of brand-color-variant
       color: white;
-    } 
+    }
 
     @else if $brand == deviantart-alt {
       @if $deviantart-alt-c0 == $btn-shape-cir {
@@ -3277,7 +3278,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $deviantart-green-lt;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == email-alt2 {
@@ -3293,7 +3294,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-multi-color-email-dk;
       }
-    } 
+    }
 
     @else if $brand == flattr {
       content: $flattr-c1; // orange arrow l
@@ -3304,7 +3305,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flattr-orange;
       }
-    } 
+    }
 
     @else if $brand == flickr {
       content: $flickr-c1; // blue dot l
@@ -3315,7 +3316,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flickr-blue;
       }
-    } 
+    }
 
     @else if $brand == forrst {
       content: $forrst-c1-alt; // brown triangle
@@ -3326,7 +3327,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $forrst-brown;
       }
-    } 
+    }
 
     @else if $brand == paypal {
       content: $paypal-c1; // blue P
@@ -3337,7 +3338,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-blue-dk;
       }
-    } 
+    }
 
     @else if $brand == paypal2 {
       content: $paypal-c1; // white P
@@ -3348,7 +3349,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-white;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == pinterest-alt {
@@ -3360,18 +3361,18 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $white;
       }
-    } 
+    }
 
     @else if $brand == skype {
       content: $skype-c1; // blue cloud
-      @include shadow-effect(icon); 
+      @include shadow-effect(icon);
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($icon-color-skype);
       }
       @else {
         color: $icon-color-skype;
       }
-    } 
+    }
 
     @else if $brand == spotify {
       content: $spotify-c1; // black circle
@@ -3382,7 +3383,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $spotify-black;
       }
-    } 
+    }
 
     @else if $brand == xing {
       content: $xing-c1; // dark green x
@@ -3393,7 +3394,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $xing-green;
       }
-    } 
+    }
 
     @else if $brand == yelp {
       content: $yelp-c1; // red inset
@@ -3404,7 +3405,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $yelp-red;
       }
-    } 
+    }
 
     @else if $brand == yelp-alt {
       content: $yelp-c1; // white inset
@@ -3427,7 +3428,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $youtube-grey;
         color: $youtube-grey-rgba;
       }
-    } 
+    }
 
   } // end c1 (span:before - 2 of 3 elements)
 
@@ -3437,7 +3438,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-multi-color .st-icon-#{$brand}:hover span:before,
   .st-multi-color.st-icon-#{$brand}:hover span:before,
   .st-multi-color .st-icon-#{$brand}:focus span:before,
-  .st-multi-color.st-icon-#{$brand}:focus span:before {  
+  .st-multi-color.st-icon-#{$brand}:focus span:before {
 
     @if $brand == amazon {
       @include shadow-effect(icon-hover);
@@ -3447,12 +3448,12 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $amazon-black;
       }
-    } 
+    }
 
     @else if $brand == android {
       // eyes stay white regardless of brand-color-hover
       color: white;
-    } 
+    }
 
     @else if $brand == deviantart-alt {
       @include shadow-effect(icon-hover);
@@ -3462,7 +3463,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $deviantart-green-lt;
       }
-    } 
+    }
 
     @else if $brand == email-alt2 {
       @if $multi-color-hover-default == brand-color-hover {
@@ -3471,7 +3472,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-dk;
       }
-    } 
+    }
 
     @else if $brand == flattr {
       @include shadow-effect(icon-hover);
@@ -3481,7 +3482,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flattr-orange;
       }
-    } 
+    }
 
     @else if $brand == flickr {
       @include shadow-effect(icon-hover);
@@ -3491,7 +3492,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flickr-blue;
       }
-    } 
+    }
 
     @else if $brand == forrst {
       @include shadow-effect(icon-hover);
@@ -3501,7 +3502,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $forrst-brown;
       }
-    } 
+    }
 
     @else if $brand == paypal {
       @include shadow-effect(icon-hover);
@@ -3511,7 +3512,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-blue-dk;
       }
-    } 
+    }
 
     @else if $brand == paypal2 {
       @include shadow-effect(icon-hover);
@@ -3521,7 +3522,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-white;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == pinterest-alt {
@@ -3532,17 +3533,17 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $white;
       }
-    } 
+    }
 
     @else if $brand == skype {
-      @include shadow-effect(icon-hover); 
+      @include shadow-effect(icon-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($icon-color-skype);
       }
       @else {
         color: $icon-color-skype;
       }
-    } 
+    }
 
     @else if $brand == spotify {
       @include shadow-effect(icon-hover); // optional
@@ -3552,7 +3553,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $spotify-black;
       }
-    } 
+    }
 
     @else if $brand == xing {
       @include shadow-effect(icon-hover);
@@ -3562,7 +3563,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $xing-green;
       }
-    } 
+    }
 
     @else if $brand == yelp {
       @include shadow-effect(icon-hover); // (text-shadow 0 -1px for bevel)
@@ -3572,7 +3573,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $yelp-red;
       }
-    } 
+    }
 
     @else if $brand == yelp-alt {
       @include shadow-effect(icon-hover); // (text-shadow 0 -1px for bevel)
@@ -3593,7 +3594,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $youtube-grey;
         color: $youtube-grey-rgba;
       }
-    } 
+    }
 
   } // end c1:hover (:hover:after - 2 of 3 elements)
 
@@ -3601,7 +3602,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   // c2 (span:after - 3 of 3 elements)
 
   .st-multi-color .st-icon-#{$brand}:after,
-  .st-multi-color.st-icon-#{$brand}:after { 
+  .st-multi-color.st-icon-#{$brand}:after {
 
     // no universal effect -- per icon...
 
@@ -3614,7 +3615,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $amazon-orange;
       }
-    } 
+    }
 
     @else if $brand == android {
       content: $android-c1;
@@ -3625,7 +3626,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-android;
       }
-    } 
+    }
 
     @else if $brand == deviantart-alt {
       // borders - no shadow-effect
@@ -3643,14 +3644,14 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       }
       @else {
         content: $deviantart-alt-c2-alt1;  // r1 border
-      }      
+      }
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($deviantart-green-lt);
       }
       @else {
         color: $deviantart-green-lt;
       }
-    } 
+    }
 
     @else if $brand == email-alt2 {
       // need to match shape
@@ -3676,7 +3677,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-lt;
       }
-    } 
+    }
 
     @else if $brand == flattr {
       content: $flattr-c2; // green arrow r
@@ -3687,9 +3688,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flattr-green;
       }
-    } 
+    }
 
-    @else if $brand == flickr { 
+    @else if $brand == flickr {
       content: $flickr-c2; // pink dot r
       @include shadow-effect(icon);
       @if $multi-color-default == brand-color-variant {
@@ -3703,9 +3704,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flickr-pink;
       }
-    } 
+    }
 
-    @else if $brand == forrst { 
+    @else if $brand == forrst {
       content: $forrst-icon; // lt green tree shape
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($forrst-green-lt);
@@ -3713,9 +3714,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $forrst-green-lt;
       }
-    } 
+    }
 
-    @else if $brand == paypal { 
+    @else if $brand == paypal {
       content: $paypal-c2; // shadow on P
       @include shadow-effect(icon);
       @if $multi-color-default == brand-color-variant {
@@ -3724,9 +3725,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-blue;
       }
-    } 
+    }
 
-    @else if $brand == paypal2 { 
+    @else if $brand == paypal2 {
       content: $paypal-c2; // shadow on P
       @include shadow-effect(icon);
       @if $multi-color-default == brand-color-variant {
@@ -3735,7 +3736,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-blue-lt;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == pinterest-alt {
@@ -3747,9 +3748,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-pinterest;
       }
-    } 
+    }
 
-    @else if $brand == skype { 
+    @else if $brand == skype {
       content: $skype-c2; // white S
       @include shadow-effect(icon);
       @if $multi-color-default == brand-color-variant {
@@ -3758,9 +3759,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
-    @else if $brand == spotify { 
+    @else if $brand == spotify {
       content: $spotify-icon; // green icon
       @include shadow-effect(icon);
       @if $multi-color-default == brand-color-variant {
@@ -3769,9 +3770,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-spotify;
       }
-    } 
+    }
 
-    @else if $brand == xing { 
+    @else if $brand == xing {
       content: $xing-c2; // light green x
       @include shadow-effect(icon);
       @if $multi-color-default == brand-color-variant {
@@ -3780,9 +3781,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $xing-green-lt;
       }
-    } 
+    }
 
-    @else if $brand == yelp { 
+    @else if $brand == yelp {
       content: $yelp-c2; // white asterisk outline
       // @include shadow-effect(icon); // (optional)
       @if $multi-color-default == brand-color-variant {
@@ -3791,10 +3792,10 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
-    @else if $brand == yelp-alt { 
+    @else if $brand == yelp-alt {
       content: $yelp-alt-c2; // red asterisk
       @include shadow-effect(icon);
       @if $multi-color-default == brand-color-variant {
@@ -3803,7 +3804,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-yelp-alt;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == youtube-alt2 {
@@ -3821,7 +3822,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         content: $youtube-alt2-cir;
       }
       @else {
-        content: $youtube-alt2-r1; 
+        content: $youtube-alt2-r1;
       }
       @include shadow-effect(icon);
       @if $multi-color-default == brand-color-variant {
@@ -3830,7 +3831,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-youtube-alt2;
       }
-    } 
+    }
 
 
   } // end c2 (span:after - 3 of 3 elements)
@@ -3841,7 +3842,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-multi-color .st-icon-#{$brand}:hover:after,
   .st-multi-color.st-icon-#{$brand}:hover:after,
   .st-multi-color .st-icon-#{$brand}:focus:after,
-  .st-multi-color.st-icon-#{$brand}:focus:after {  
+  .st-multi-color.st-icon-#{$brand}:focus:after {
 
     @if $brand == amazon {
       @include shadow-effect(icon-hover);
@@ -3851,7 +3852,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $amazon-orange;
       }
-    } 
+    }
 
     @else if $brand == android {
       @include shadow-effect(icon-hover);
@@ -3861,7 +3862,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-android;
       }
-    } 
+    }
 
     @else if $brand == deviantart-alt {
       @if $multi-color-hover-default == brand-color-hover {
@@ -3870,7 +3871,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $deviantart-green-lt;
       }
-    } 
+    }
 
     @else if $brand == email-alt2 {
       @include shadow-effect(icon-hover);
@@ -3880,7 +3881,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-lt;
       }
-    } 
+    }
 
     @else if $brand == flattr {
       @include shadow-effect(icon-hover);
@@ -3890,9 +3891,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flattr-green;
       }
-    } 
+    }
 
-    @else if $brand == flickr { 
+    @else if $brand == flickr {
       @include shadow-effect(icon-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @if $multi-color-lighten-by > 0 {
@@ -3905,18 +3906,18 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flickr-pink;
       }
-    } 
+    }
 
-    @else if $brand == forrst { 
+    @else if $brand == forrst {
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($forrst-green-lt);
       }
       @else {
         color: $forrst-green-lt;
       }
-    } 
+    }
 
-    @else if $brand == paypal { 
+    @else if $brand == paypal {
       @include shadow-effect(icon-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($paypal-blue);
@@ -3924,9 +3925,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-blue;
       }
-    } 
+    }
 
-    @else if $brand == paypal2 { 
+    @else if $brand == paypal2 {
       @include shadow-effect(icon-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($paypal-blue-lt);
@@ -3934,7 +3935,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-blue-lt;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == pinterest-alt {
@@ -3945,9 +3946,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-pinterest;
       }
-    } 
+    }
 
-    @else if $brand == spotify { 
+    @else if $brand == spotify {
       @include shadow-effect(icon-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($icon-color-spotify);
@@ -3955,9 +3956,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-spotify;
       }
-    } 
+    }
 
-    @else if $brand == xing { 
+    @else if $brand == xing {
       @include shadow-effect(icon-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($xing-green-lt);
@@ -3965,9 +3966,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $xing-green-lt;
       }
-    } 
+    }
 
-    @else if $brand == yelp { 
+    @else if $brand == yelp {
       // @include shadow-effect(icon-hover); // (optional)
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($color-multi-color-icon-default);
@@ -3975,10 +3976,10 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
-    @else if $brand == yelp-alt { 
+    @else if $brand == yelp-alt {
       @include shadow-effect(icon-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($icon-color-yelp-alt);
@@ -3986,7 +3987,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-yelp-alt;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == youtube-alt2 {
@@ -3997,7 +3998,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-youtube-alt2;
       }
-    } 
+    }
 
   } // end c2:hover (3 of 3 elements)
 
@@ -4006,7 +4007,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
 
   // **** ICON-ONLY - 3 ELEMENTS to 2 (c1, c2) **** /
 
-  // These logos need only 2 colors if there's no btn bg (.st-shape-icon): 
+  // These logos need only 2 colors if there's no btn bg (.st-shape-icon):
   // $(brand)-c1 and $(brand)-c2 only -- so no extra span needed.
 
   // c0 - we're remapping c1 in place of c0, so no need to negate.
@@ -4023,7 +4024,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:before,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:before,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:before,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:before { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:before {
 
     // universally applied effect to icon...
     @include shadow-effect(icon-only);
@@ -4036,7 +4037,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $amazon-black;
       }
-    } 
+    }
 
     @else if $brand == android {
       content: $android-c1 !important; // overrules icon-shape bg
@@ -4046,7 +4047,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $android-green;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == deviantart-alt {
@@ -4057,7 +4058,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-deviantart;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == email-alt2 {
@@ -4068,7 +4069,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-mix;
       }
-    } 
+    }
 
     @else if $brand == flattr {
       content: $flattr-c1 !important; // orange arrow l
@@ -4078,7 +4079,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flattr-orange;
       }
-    } 
+    }
 
     @else if $brand == flickr {
       content: $flickr-c1 !important; // blue dot l
@@ -4088,7 +4089,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flickr-blue;
       }
-    } 
+    }
 
     @else if $brand == forrst {
       content: $forrst-c1-alt !important; // brown triangle
@@ -4098,7 +4099,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $forrst-brown;
       }
-    } 
+    }
 
     // same icon-only version
     @else if $brand == paypal or $brand == paypal2 {
@@ -4119,37 +4120,37 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-pinterest;
       }
-    } 
+    }
 
     @else if $brand == skype {
-      content: $skype-c1 !important; 
+      content: $skype-c1 !important;
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($icon-color-skype);
       }
       @else {
         color: $icon-color-skype;
       }
-    } 
+    }
 
     @else if $brand == spotify {
-      content: $spotify-c1 !important; 
+      content: $spotify-c1 !important;
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($btn-color-spotify);
       }
       @else {
         color: $btn-color-spotify;
       }
-    } 
+    }
 
     @else if $brand == xing {
-      content: $xing-c1 !important; 
+      content: $xing-c1 !important;
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($xing-green);
       }
       @else {
         color: $xing-green;
       }
-    } 
+    }
 
     @else if $brand == yelp {
       content: $yelp-c1 !important;
@@ -4159,13 +4160,13 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == yelp-alt {
       // no white outline, asterisk only
-      content: "" !important; 
-    } 
+      content: "" !important;
+    }
 
     @else if $brand == youtube-alt2 {
       content: $youtube-alt2-c1 !important; // bigger screen shape
@@ -4176,7 +4177,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-white;
       }
-    } 
+    }
 
   } // end c1 (:before - 1 of 2 elements)
 
@@ -4188,7 +4189,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-multi-color .st-shape-icon.st-icon-#{$brand}:hover:before,
   .st-shape-icon.st-multi-color .st-icon-#{$brand}:focus:before,
   .st-shape-icon .st-multi-color.st-icon-#{$brand}:focus:before,
-  .st-shape-icon.st-multi-color.st-icon-#{$brand}:focus:before, 
+  .st-shape-icon.st-multi-color.st-icon-#{$brand}:focus:before,
   .st-multi-color .st-shape-icon.st-icon-#{$brand}:focus:before,
   .st-shape-rounded5.st-multi-color .st-icon-#{$brand}:hover:before,
   .st-shape-rounded5 .st-multi-color.st-icon-#{$brand}:hover:before,
@@ -4196,7 +4197,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-multi-color .st-shape-rounded5.st-icon-#{$brand}:hover:before,
   .st-shape-rounded5.st-multi-color .st-icon-#{$brand}:focus:before,
   .st-shape-rounded5 .st-multi-color.st-icon-#{$brand}:focus:before,
-  .st-shape-rounded5.st-multi-color.st-icon-#{$brand}:focus:before, 
+  .st-shape-rounded5.st-multi-color.st-icon-#{$brand}:focus:before,
   .st-multi-color .st-shape-rounded5.st-icon-#{$brand}:focus:before,
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:hover:before,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:hover:before,
@@ -4204,8 +4205,8 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-multi-color .st-shape-r5.st-icon-#{$brand}:hover:before,
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:focus:before,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:focus:before,
-  .st-shape-r5.st-multi-color.st-icon-#{$brand}:focus:before, 
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:before { 
+  .st-shape-r5.st-multi-color.st-icon-#{$brand}:focus:before,
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:before {
 
     // universally applied effect to icon...
     @include shadow-effect(icon-only-hover);
@@ -4217,7 +4218,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $amazon-black;
       }
-    } 
+    }
 
     @else if $brand == android {
       @if $multi-color-hover-default == brand-color-hover {
@@ -4226,7 +4227,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $android-green;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == deviantart-alt {
@@ -4236,7 +4237,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-deviantart;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == email-alt2 {
@@ -4246,7 +4247,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey;
       }
-    } 
+    }
 
     @else if $brand == flattr {
       @if $multi-color-hover-default == brand-color-hover {
@@ -4255,7 +4256,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flattr-orange;
       }
-    } 
+    }
 
     @else if $brand == flickr {
       @if $multi-color-hover-default == brand-color-hover {
@@ -4264,7 +4265,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flickr-blue;
       }
-    } 
+    }
 
     @else if $brand == forrst {
       @if $multi-color-hover-default == brand-color-hover {
@@ -4273,7 +4274,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $forrst-brown;
       }
-    } 
+    }
 
     // same icon-only-hover version
     @else if $brand == paypal or $brand == paypal2 {
@@ -4292,7 +4293,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-pinterest;
       }
-    } 
+    }
 
     @else if $brand == skype {
       @if $multi-color-hover-default == brand-color-hover {
@@ -4301,7 +4302,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-skype;
       }
-    } 
+    }
 
     @else if $brand == spotify {
       @if $multi-color-hover-default == brand-color-hover {
@@ -4310,7 +4311,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-spotify;
       }
-    } 
+    }
 
     @else if $brand == xing {
       @if $multi-color-hover-default == brand-color-hover {
@@ -4319,7 +4320,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $xing-green;
       }
-    } 
+    }
 
     @else if $brand == yelp {
       @if $multi-color-hover-default == brand-color-hover {
@@ -4328,7 +4329,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     // * yelp-alt c0 is ""
 
@@ -4339,7 +4340,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-white;
       }
-    } 
+    }
 
   } // end .st-shape-icon c1:hover (1 of 2 elements)
 
@@ -4368,7 +4369,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5 .st-multi-color.st-icon-#{$brand} > span:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand} > span:after,
   .st-multi-color .st-shape-r5.st-icon-#{$brand} > span:before,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand} > span:after { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand} > span:after {
 
     content: "";
 
@@ -4389,7 +4390,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-multi-color .st-shape-r5.st-icon-#{$brand} > span:before {
 
     // * in stackicons-social-complete
-    @if $brand == email-alt2 { 
+    @if $brand == email-alt2 {
       content: $email-alt2-c2-icon; // inset shadow
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($icon-multi-color-email-dk);
@@ -4397,10 +4398,10 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-multi-color-email-dk;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
-    @else if $brand == youtube-alt2 { 
+    @else if $brand == youtube-alt2 {
       content: $youtube-alt2-c3; // inset shadow
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($youtube-grey);
@@ -4410,7 +4411,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $youtube-grey;
         color: $youtube-grey-rgba;
       }
-    } 
+    }
 
   }
 
@@ -4440,16 +4441,16 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus span:before {
 
     // * in stackicons-social-complete
-    @if $brand == email-alt2 { 
+    @if $brand == email-alt2 {
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($icon-multi-color-email-dk);
       }
       @else {
         color: $icon-multi-color-email-dk;
       }
-    } 
+    }
     // * in stackicons-social-complete
-    @else if $brand == youtube-alt2 { 
+    @else if $brand == youtube-alt2 {
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($youtube-grey);
         @include adjust-multi-color-hover($youtube-grey-rgba);
@@ -4458,7 +4459,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $youtube-grey;
         color: $youtube-grey-rgba;
       }
-    } 
+    }
 
   }
 
@@ -4475,7 +4476,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:after,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:after,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:after { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:after {
 
     // no universal effect, added on a per icon basis...
     // negate any default effects:
@@ -4490,19 +4491,19 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $amazon-orange;
       }
-    } 
+    }
 
     @if $brand == android {
       content: $android-c2; // white eyes
       @include glow;
       color: white;
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == deviantart-alt {
       content: ""; // lose border
       text-shadow: none;
-    } 
+    }
 
     @else if $brand == email-alt2 {
       content: $email-alt2-c1-icon; // 5x7 envelope flaps
@@ -4513,7 +4514,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-lt;
       }
-    } 
+    }
 
     @else if $brand == flattr {
       content: $flattr-c2; // green arrow r
@@ -4524,9 +4525,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flattr-green;
       }
-    } 
+    }
 
-    @else if $brand == flickr { 
+    @else if $brand == flickr {
       content: $flickr-c2; // pink dot r
       @include shadow-effect(icon-only);
       @if $multi-color-default == brand-color-variant {
@@ -4540,9 +4541,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flickr-pink;
       }
-    } 
+    }
 
-    @else if $brand == forrst { 
+    @else if $brand == forrst {
       content: $forrst-icon; // light green tree shape
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($forrst-green-lt);
@@ -4550,9 +4551,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $forrst-green-lt;
       }
-    } 
+    }
 
-    @else if $brand == paypal or $brand == paypal2 { 
+    @else if $brand == paypal or $brand == paypal2 {
       content: $paypal-c2; // P shadow
       @include shadow-effect(icon-only);
       @if $multi-color-default == brand-color-variant {
@@ -4561,9 +4562,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-blue;
       }
-    } 
+    }
 
-    @else if $brand == pinterest-alt { 
+    @else if $brand == pinterest-alt {
       content: $pinterest-alt-c2; // white P cropped by circle
       @include shadow-effect(icon-only);
       @if $multi-color-default == brand-color-variant {
@@ -4572,9 +4573,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
-    @else if $brand == spotify { 
+    @else if $brand == spotify {
       content: $spotify-c2; // black waves
       @include shadow-effect(icon-only);
       @if $multi-color-default == brand-color-variant {
@@ -4583,9 +4584,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $spotify-black;
       }
-    } 
+    }
 
-    @else if $brand == xing { 
+    @else if $brand == xing {
       content: $xing-c2; // black waves
       @include shadow-effect(icon-only);
       @if $multi-color-default == brand-color-variant {
@@ -4594,10 +4595,10 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $xing-green-lt;
       }
-    } 
+    }
 
     // * yelp-alt in stackicons-social-complete
-    @else if $brand == yelp or $brand == yelp-alt { 
+    @else if $brand == yelp or $brand == yelp-alt {
       content: $yelp-icon; // red asterisk
       @include shadow-effect(icon-only);
       @if $multi-color-default == brand-color-variant {
@@ -4606,10 +4607,10 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-yelp;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
-    @else if $brand == youtube-alt2 { 
+    @else if $brand == youtube-alt2 {
       content: $youtube-alt2-icon; // bigger icon
       @include shadow-effect(icon-only);
       @if $multi-color-default == brand-color-variant {
@@ -4618,7 +4619,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-youtube-alt2;
       }
-    } 
+    }
 
   } // end .st-shape-icon c2 (:after - 2 of 2 elements)
 
@@ -4647,7 +4648,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:focus:after,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:focus:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:focus:after,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:after { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:after {
 
     // no universal effect, added on a per icon basis...
 
@@ -4659,12 +4660,12 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $amazon-orange;
       }
-    } 
+    }
 
     @if $brand == android {
       @include glow;
       color: white;
-    } 
+    }
 
     // * deviantart-alt2 content: ""
 
@@ -4676,7 +4677,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-lt;
       }
-    } 
+    }
 
     @else if $brand == flattr {
       @include shadow-effect(icon-only-hover);
@@ -4686,9 +4687,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flattr-green;
       }
-    } 
+    }
 
-    @else if $brand == flickr { 
+    @else if $brand == flickr {
       @include shadow-effect(icon-only-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @if $multi-color-lighten-by > 0 {
@@ -4701,18 +4702,18 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $flickr-pink;
       }
-    } 
+    }
 
-    @else if $brand == forrst { 
+    @else if $brand == forrst {
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($forrst-green-lt);
       }
       @else {
         color: $forrst-green-lt;
       }
-    } 
+    }
 
-    @else if $brand == paypal or $brand == paypal2 { 
+    @else if $brand == paypal or $brand == paypal2 {
       @include shadow-effect(icon-only-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($paypal-blue);
@@ -4720,9 +4721,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $paypal-blue;
       }
-    } 
+    }
 
-    @else if $brand == pinterest-alt { 
+    @else if $brand == pinterest-alt {
       @include shadow-effect(icon-only-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($color-multi-color-icon-default);
@@ -4730,9 +4731,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
-    @else if $brand == spotify { 
+    @else if $brand == spotify {
       @include shadow-effect(icon-only-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($spotify-black);
@@ -4740,9 +4741,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $spotify-black;
       }
-    } 
+    }
 
-    @else if $brand == xing { 
+    @else if $brand == xing {
       @include shadow-effect(icon-only-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($xing-green-lt);
@@ -4750,10 +4751,10 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $xing-green-lt;
       }
-    } 
+    }
 
     // * yelp-alt in stackicons-social-complete
-    @else if $brand == yelp or $brand == yelp-alt { 
+    @else if $brand == yelp or $brand == yelp-alt {
       @include shadow-effect(icon-only-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($icon-color-yelp);
@@ -4761,10 +4762,10 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-yelp;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
-    @else if $brand == youtube-alt2 { 
+    @else if $brand == youtube-alt2 {
       @include shadow-effect(icon-only-hover);
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($icon-color-youtube-alt2);
@@ -4772,7 +4773,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-color-youtube-alt2;
       }
-    } 
+    }
 
   } // end .st-shape-icon c2:hover (hover:after - 2 of 2 elements)
 
@@ -4785,32 +4786,32 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
 // **************************** /
 
 // 4 ELEMENTS (c0, c1, c2, c3):
-// Loop through list of the brands that use 4 elements: 
-// $(brand)-c0, $(brand)-c1, $(brand)-c2, $(brand)-c3 --  
+// Loop through list of the brands that use 4 elements:
+// $(brand)-c0, $(brand)-c1, $(brand)-c2, $(brand)-c3 --
 // means adding an extra <span></span> in the markup...
 
-// Certain icons, e.g. github, limit the number of elements 
+// Certain icons, e.g. github, limit the number of elements
 // here to have a version that works with only 1 extra span.
 
 // BRAND LIST
 
-// Un-comment the appropriate @each statment below... 
+// Un-comment the appropriate @each statment below...
 // (you can also create your own subset here and elsewhere)
 
 // Stackicons-Social-Minimal (subsets the most widely used icons):
 @each $brand in dribbble, dribbble-alt, email, github, gmail, gmail-alt, instagram, youtube, youtube2, youtube-alt, search-alt {
 
 // Standard:
-// @each $brand in delicious, dribbble, dribbble-alt, ebay, email, foursquare, github, gmail, gmail-alt, imdb, instagram, microsoft, picasa, reddit, slideshare, stackoverflow, windows7, youtube, youtube2, youtube-alt, search-alt { 
+// @each $brand in delicious, dribbble, dribbble-alt, ebay, email, foursquare, github, gmail, gmail-alt, imdb, instagram, microsoft, picasa, reddit, slideshare, stackoverflow, windows7, youtube, youtube2, youtube-alt, search-alt {
 
 // * Stackicons-Social-Complete:
 // adds gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt-2, podcast
 
-// @each $brand in delicious, dribbble, dribbble-alt, ebay, email, foursquare, github, gmail, gmail-alt, gmail-lg, gmail-lg-alt, imdb, instagram, instagram-alt, instagram-alt2, microsoft, picasa, podcast, reddit, slideshare, stackoverflow, windows7, youtube, youtube2, youtube-alt, search-alt { 
+// @each $brand in delicious, dribbble, dribbble-alt, ebay, email, foursquare, github, gmail, gmail-alt, gmail-lg, gmail-lg-alt, imdb, instagram, instagram-alt, instagram-alt2, microsoft, picasa, podcast, reddit, slideshare, stackoverflow, windows7, youtube, youtube2, youtube-alt, search-alt {
 
   // c0 (:before - 1 of 4 elements)
   .st-multi-color .st-icon-#{$brand}:before,
-  .st-multi-color.st-icon-#{$brand}:before { 
+  .st-multi-color.st-icon-#{$brand}:before {
 
     // universally applied effect to bg...
     @include shadow-effect(bg);
@@ -4853,7 +4854,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $btn-color-email;
       }
-    } 
+    }
 
     @else if $brand == foursquare {
       content: $foursquare-c0; // r1
@@ -5040,7 +5041,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
     @else if $brand == youtube {
       content: $youtube-c0;
       @if $multi-color-default == brand-color-variant {
-        @include adjust-multi-color($youtube-red); 
+        @include adjust-multi-color($youtube-red);
       }
       @else {
         color: $youtube-red;
@@ -5051,7 +5052,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
     @else if $brand == youtube2 {
       content: $youtube-c0;
       @if $multi-color-default == brand-color-variant {
-        @include adjust-multi-color($youtube-white); 
+        @include adjust-multi-color($youtube-white);
       }
       @else {
         color: $youtube-white;
@@ -5087,23 +5088,23 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-multi-color .st-icon-#{$brand}:hover:before,
   .st-multi-color.st-icon-#{$brand}:hover:before,
   .st-multi-color .st-icon-#{$brand}:focus:before,
-  .st-multi-color.st-icon-#{$brand}:focus:before { 
+  .st-multi-color.st-icon-#{$brand}:focus:before {
 
     // universally applied effect to bg...
     @include shadow-effect(bg-hover);
 
     // same default light bg...
     // dribbble
-     @if $brand == dribbble or $brand == dribbble-alt or 
+     @if $brand == dribbble or $brand == dribbble-alt or
          $brand == ebay or
          $brand == github or
          $brand == gmail or $brand == gmail-alt or
          $brand == instagram or
          // * in stackicons-social-complete
          $brand == instagram-alt2 or
-         $brand == microsoft or 
+         $brand == microsoft or
          $brand == podcast or
-         $brand == slideshare or 
+         $brand == slideshare or
          $brand == stackoverflow or
          $brand == windows7 or
          $brand == youtube-alt or
@@ -5214,7 +5215,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
     // youtube
     @else if $brand == youtube {
       @if $multi-color-hover-default == brand-color-hover {
-        @include adjust-multi-color-hover($youtube-red); 
+        @include adjust-multi-color-hover($youtube-red);
       }
       @else {
         color: $youtube-red;
@@ -5224,7 +5225,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
     // youtube2
     @else if $brand == youtube2 {
       @if $multi-color-hover-default == brand-color-hover {
-        @include adjust-multi-color-hover($youtube-white); 
+        @include adjust-multi-color-hover($youtube-white);
       }
       @else {
         color: $youtube-white;
@@ -5234,9 +5235,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   } // end c0:hover (1 of 4 elements)
 
 
-  // c1 (span:before - 2 of 4 elements) 
+  // c1 (span:before - 2 of 4 elements)
   .st-multi-color .st-icon-#{$brand} > span:before,
-  .st-multi-color.st-icon-#{$brand} > span:before { 
+  .st-multi-color.st-icon-#{$brand} > span:before {
 
     // no universally applied effect...
     // need to parse for each icon
@@ -5251,7 +5252,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $white;
       }
-    } 
+    }
 
     // dribbble
     @else if $brand == dribbble or $brand == dribbble-alt {
@@ -5263,7 +5264,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $dribbble-pink;
       }
-    } 
+    }
 
     // ebay
     @else if $brand == ebay {
@@ -5275,7 +5276,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $ebay-red;
       }
-    } 
+    }
 
     // email
     @else if $brand == email {
@@ -5287,7 +5288,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-multi-color-email-dk;
       }
-    } 
+    }
 
     // foursquare
     @else if $brand == foursquare {
@@ -5299,7 +5300,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $foursquare-blue-dk;
       }
-    } 
+    }
 
     // github
     @else if $brand == github {
@@ -5311,7 +5312,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $github-black;
       }
-    } 
+    }
 
     // gmail
     @else if $brand == gmail {
@@ -5323,7 +5324,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-beige;
       }
-    } 
+    }
 
     // gmail-alt
     @else if $brand == gmail-alt {
@@ -5335,7 +5336,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-grey;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // gmail-lg
@@ -5347,7 +5348,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-red;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // gmail-lg-alt
@@ -5359,7 +5360,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-alt-red;
       }
-    } 
+    }
 
     // imdb
     @else if $brand == imdb {
@@ -5386,7 +5387,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $imdb-yellow-lt;
         color: $imdb-yellow-lt-rgba;
       }
-    } 
+    }
 
     // instagram
     @else if $brand == instagram {
@@ -5398,7 +5399,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-beige;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // instagram-alt2
@@ -5411,7 +5412,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-tan;
       }
-    } 
+    }
 
     // microsoft
     @else if $brand == microsoft {
@@ -5423,7 +5424,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $microsoft-red;
       }
-    } 
+    }
 
     // picasa
     @else if $brand == picasa {
@@ -5435,7 +5436,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $picasa-red;
       }
-    } 
+    }
 
     // podcast
     @else if $brand == podcast {
@@ -5447,7 +5448,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $podcast-grey;
       }
-    } 
+    }
 
     // reddit
     @else if $brand == reddit {
@@ -5459,7 +5460,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     // slideshare
     @else if $brand == slideshare {
@@ -5471,7 +5472,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $slideshare-grey;
       }
-    } 
+    }
 
     // stackoverflow
     @else if $brand == stackoverflow {
@@ -5483,7 +5484,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $slideshare-grey;
       }
-    } 
+    }
 
     // windows7
     @else if $brand == windows7 {
@@ -5495,7 +5496,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $windows7-red;
       }
-    } 
+    }
 
     // youtube
     @else if $brand == youtube {
@@ -5507,7 +5508,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-red;
       }
-    } 
+    }
 
     // youtube2
     @else if $brand == youtube2 {
@@ -5519,7 +5520,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-white;
       }
-    } 
+    }
 
     // youtube-alt
     @else if $brand == youtube-alt {
@@ -5532,10 +5533,10 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-black;
       }
-    } 
+    }
 
     // nav elements:
-  
+
     // search-alt
     @else if $brand == search-alt {
       content: $search-c1; // magnifying glass
@@ -5546,16 +5547,16 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $search-grey;
       }
-    } 
+    }
 
-  } // end c1 (span:before - 2 of 4 elements) 
+  } // end c1 (span:before - 2 of 4 elements)
 
 
-  // c1 - do the hover! (:hover span:before - 2 of 4 elements) 
+  // c1 - do the hover! (:hover span:before - 2 of 4 elements)
   .st-multi-color .st-icon-#{$brand}:hover span:before,
   .st-multi-color.st-icon-#{$brand}:hover span:before,
   .st-multi-color .st-icon-#{$brand}:focus span:before,
-  .st-multi-color.st-icon-#{$brand}:focus span:before { 
+  .st-multi-color.st-icon-#{$brand}:focus span:before {
 
     // delicious
     @if $brand == delicious {
@@ -5566,7 +5567,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $white;
       }
-    } 
+    }
 
     // dribbble, dribbble-alt
     @else if $brand == dribbble or $brand == dribbble-alt {
@@ -5577,7 +5578,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $dribbble-pink;
       }
-    } 
+    }
 
     // ebay
     @else if $brand == ebay { // "e a"
@@ -5588,7 +5589,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $ebay-red;
       }
-    } 
+    }
 
     // email
     @else if $brand == email {
@@ -5599,7 +5600,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-multi-color-email-dk;
       }
-    } 
+    }
 
     // foursquare
     @else if $brand == foursquare {
@@ -5610,7 +5611,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $foursquare-blue-dk;
       }
-    } 
+    }
 
     // github
     @else if $brand == github {
@@ -5621,7 +5622,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $github-black;
       }
-    } 
+    }
 
     // gmail
     @else if $brand == gmail {
@@ -5632,7 +5633,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-beige;
       }
-    } 
+    }
 
     // gmail-alt
     @else if $brand == gmail-alt {
@@ -5643,7 +5644,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-grey;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // gmail-lg
@@ -5654,7 +5655,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-red;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // gmail-lg-alt
@@ -5665,7 +5666,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-red-alt;
       }
-    } 
+    }
 
     // imdb
     @else if $brand == imdb {
@@ -5677,7 +5678,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $imdb-yellow-lt;
         color: $imdb-yellow-lt-rgba;
       }
-    } 
+    }
 
     // instagram
     @else if $brand == instagram {
@@ -5688,7 +5689,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-beige;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // instagram-alt2
@@ -5700,8 +5701,8 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-tan;
       }
-    } 
-  
+    }
+
     // microsoft
     @else if $brand == microsoft {
       @include shadow-effect(icon-hover);
@@ -5711,7 +5712,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $microsoft-red;
       }
-    } 
+    }
 
     // picasa
     @else if $brand == picasa {
@@ -5722,7 +5723,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $picasa-red;
       }
-    } 
+    }
 
     // podcast
     @else if $brand == podcast {
@@ -5733,7 +5734,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $podcast-grey;
       }
-    } 
+    }
 
     // reddit
     @else if $brand == reddit {
@@ -5744,7 +5745,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     // slideshare
     @else if $brand == slideshare {
@@ -5755,7 +5756,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $slideshare-grey;
       }
-    } 
+    }
 
     // stackoverflow
     @else if $brand == stackoverflow {
@@ -5766,7 +5767,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $stackoverflow-grey;
       }
-    } 
+    }
 
     // windows7
     @else if $brand == windows7 {
@@ -5777,7 +5778,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $windows7-red;
       }
-    } 
+    }
 
     // youtube
     @else if $brand == youtube {
@@ -5788,7 +5789,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-red;
       }
-    } 
+    }
 
     // youtube2
     @else if $brand == youtube2 {
@@ -5799,7 +5800,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-white;
       }
-    } 
+    }
 
     // youtube-alt
     @else if $brand == youtube-alt {
@@ -5810,10 +5811,10 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-black;
       }
-    } 
+    }
 
     // nav elements:
-    
+
     // search-alt
     @else if $brand == search-alt {
       @include shadow-effect(icon-hover);
@@ -5823,14 +5824,14 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $search-grey;
       }
-    } 
+    }
 
-  } // end c1:hover (:hover span:before - 2 of 4 elements) 
+  } // end c1:hover (:hover span:before - 2 of 4 elements)
 
 
-  // c2 (span:after - 3 of 4 elements) 
+  // c2 (span:after - 3 of 4 elements)
   .st-multi-color .st-icon-#{$brand} > span:after,
-  .st-multi-color.st-icon-#{$brand} > span:after { 
+  .st-multi-color.st-icon-#{$brand} > span:after {
 
     // no universally applied effect...
 
@@ -5843,7 +5844,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $delicious-blue;
       }
-    } 
+    }
 
     // dribbble, dribbble-alt
     @else if $brand == dribbble or $brand == dribbble-alt {
@@ -5854,7 +5855,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $dribbble-pink-lt;
       }
-    } 
+    }
 
     // ebay
     @else if $brand == ebay {
@@ -5866,7 +5867,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $ebay-blue;
       }
-    } 
+    }
 
      // email
     @else if $brand == email {
@@ -5877,7 +5878,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $icon-multi-color-email;
       }
-    } 
+    }
 
    // foursquare
     @else if $brand == foursquare {
@@ -5888,7 +5889,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $foursquare-green;
       }
-    } 
+    }
 
     // github
     @else if $brand == github {
@@ -5899,7 +5900,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $github-orange-lt;
       }
-    } 
+    }
 
     // gmail
     @else if $brand == gmail {
@@ -5910,7 +5911,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-red;
       }
-    } 
+    }
 
     // gmail-alt
     @else if $brand == gmail-alt {
@@ -5921,7 +5922,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-alt-red;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // gmail-lg
@@ -5933,7 +5934,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-beige-dk-rgba;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // gmail-lg-alt
@@ -5972,7 +5973,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $imdb-yellow-lt;
         color: $imdb-yellow-lt-rgba;
       }
-    } 
+    }
 
     // instagram
     @else if $brand == instagram {
@@ -5983,7 +5984,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-tan;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // instagram-alt
@@ -5997,7 +5998,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $instagram-black;
         color: $instagram-black-rgba;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // instagram-alt2
@@ -6011,7 +6012,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $instagram-black;
         color: $instagram-black-rgba;
       }
-    } 
+    }
 
     // microsoft
     @else if $brand == microsoft {
@@ -6023,7 +6024,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $microsoft-blue-mix;
       }
-    } 
+    }
 
     // picasa
     @else if $brand == picasa {
@@ -6035,7 +6036,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $picasa-yellow-mix;
       }
-    } 
+    }
 
     // podcast
     @else if $brand == podcast {
@@ -6048,7 +6049,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $podcast-purple-dk;
         color: $podcast-purple-dk-rgba;
       }
-    } 
+    }
 
     // reddit
     @else if $brand == reddit {
@@ -6059,7 +6060,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $reddit-red;
       }
-    } 
+    }
 
     // slideshare
     @else if $brand == slideshare {
@@ -6071,7 +6072,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $slideshare-blue;
       }
-    } 
+    }
 
     // stackoverflow
     @else if $brand == stackoverflow {
@@ -6083,7 +6084,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $stackoverflow-orange-mix;
       }
-    } 
+    }
 
     // windows7
     @else if $brand == windows7 {
@@ -6095,7 +6096,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $windows7-blue-mix;
       }
-    } 
+    }
 
     // youtube
     @else if $brand == youtube {
@@ -6108,7 +6109,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $youtube-grey;
         color: $youtube-grey-rgba;
       }
-    } 
+    }
 
     // youtube2
     @else if $brand == youtube2 {
@@ -6121,7 +6122,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $youtube-red-dk;
         color: $youtube-red-dk-rgba;
       }
-    } 
+    }
 
     // youtube-alt
     @else if $brand == youtube-alt {
@@ -6134,8 +6135,8 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-red-alt;
       }
-    } 
-  
+    }
+
     // nav elements:
 
     // search-alt
@@ -6149,16 +6150,16 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $search-blue-lt;
         color: $search-blue-lt-rgba;
       }
-    } 
+    }
 
-  } // end c2 (span:after - 3 of 4 elements) 
+  } // end c2 (span:after - 3 of 4 elements)
 
 
-  // c2 - do the hover! (:hover span:after - 3 of 4 elements) 
+  // c2 - do the hover! (:hover span:after - 3 of 4 elements)
   .st-multi-color .st-icon-#{$brand}:hover span:after,
   .st-multi-color.st-icon-#{$brand}:hover span:after,
   .st-multi-color .st-icon-#{$brand}:focus span:after,
-  .st-multi-color.st-icon-#{$brand}:focus span:after { 
+  .st-multi-color.st-icon-#{$brand}:focus span:after {
 
     // delicious
     @if $brand == delicious {
@@ -6189,7 +6190,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $ebay-blue;
       }
-    } 
+    }
 
     // email
     @else if $brand == email {
@@ -6209,7 +6210,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $foursquare-green;
       }
-    } 
+    }
 
     // github
     @else if $brand == github {
@@ -6219,7 +6220,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $github-orange-lt;
       }
-    } 
+    }
 
     // gmail
     @else if $brand == gmail {
@@ -6229,7 +6230,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-red;
       }
-    } 
+    }
 
     // gmail-alt
     @else if $brand == gmail-alt {
@@ -6239,7 +6240,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-alt-red;
       }
-    } 
+    }
 
     // imdb
     @else if $brand == imdbimd {
@@ -6251,7 +6252,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $imdb-yellow-lt;
         color: $imdb-yellow-lt-rgba;
       }
-    } 
+    }
 
     // instagram
     @else if $brand == instagram {
@@ -6262,7 +6263,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-tan;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // instagram-alt, instagram-alt2
@@ -6276,7 +6277,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $white;
         color: transparentize($instagram-black-rgba, .5);
       }
-    } 
+    }
 
     // microsoft
     @else if $brand == microsoft {
@@ -6287,7 +6288,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $microsoft-blue-mix;
       }
-    } 
+    }
 
     // picasa
     @else if $brand == picasa {
@@ -6298,7 +6299,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $picasa-yellow-mix;
       }
-    } 
+    }
 
     // reddit
     @else if $brand == reddit {
@@ -6308,7 +6309,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $reddit-red;
       }
-    } 
+    }
 
     // slideshare
     @else if $brand == slideshare {
@@ -6319,7 +6320,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $slideshare-blue;
       }
-    } 
+    }
 
     // stackoverflow
     @else if $brand == stackoverflow {
@@ -6330,7 +6331,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $stackoverflow-orange-mix;
       }
-    } 
+    }
 
     // windows7
     @else if $brand == windows7 {
@@ -6341,7 +6342,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $windows7-blue-mix;
       }
-    } 
+    }
 
     // youtube
     @else if $brand == youtube {
@@ -6353,7 +6354,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $youtube-grey;
         color: $youtube-grey-rgba;
       }
-    } 
+    }
 
     // youtube2
     @else if $brand == youtube2 {
@@ -6363,7 +6364,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-white;
       }
-    } 
+    }
 
     // youtube-alt
     @else if $brand == youtube-alt {
@@ -6374,7 +6375,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-red-alt;
       }
-    } 
+    }
 
     // nav elements:
 
@@ -6388,14 +6389,14 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $search-blue-lt;
         color: $search-blue-lt-rgba;
       }
-    } 
-  
-  } // end c2:hover (:hover:after - 3 of 4 elements) 
+    }
+
+  } // end c2:hover (:hover:after - 3 of 4 elements)
 
 
   // c3 (:after - 4 of 4 elements)
   .st-multi-color .st-icon-#{$brand}:after,
-  .st-multi-color.st-icon-#{$brand}:after { 
+  .st-multi-color.st-icon-#{$brand}:after {
 
     // no universally applied effect...
 
@@ -6589,7 +6590,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-tan;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     // instagram-alt2
@@ -6734,11 +6735,11 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   } // end c3 (:before - 4 of 4 elements)
 
 
-  // c3 - do the hover! (:hover:after - 4 of 4 elements) 
+  // c3 - do the hover! (:hover:after - 4 of 4 elements)
   .st-multi-color .st-icon-#{$brand}:hover:after,
   .st-multi-color.st-icon-#{$brand}:hover:after,
   .st-multi-color .st-icon-#{$brand}:focus:after,
-  .st-multi-color.st-icon-#{$brand}:focus:after { 
+  .st-multi-color.st-icon-#{$brand}:focus:after {
 
     // delicious
     @if $brand == delicious {
@@ -6950,7 +6951,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $slideshare-orange;
       }
     } // end slideshare
-    
+
     // stackoverflow
     @else if $brand == stackoverflow {
       @if $multi-color-hover-default == brand-color-hover {
@@ -7010,7 +7011,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: white;
         color: rgba(white, 0.7);
       }
-    } // end search-alt    
+    } // end search-alt
 
   } // end c3:hover (:before:hover - 4 of 4 elements)
 
@@ -7019,7 +7020,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
 
   // *** ICON-ONLY - 4 ELEMENTS to 3 (or 4) *** /
 
-  // These logos need 3 or 4 colors with no btn bg (.st-shape-icon): 
+  // These logos need 3 or 4 colors with no btn bg (.st-shape-icon):
   // $(brand)-c1 through $(brand)-c4 -- so an extra <span></span> needed.
 
   // c1 - we're remapping c1 in place of c0...
@@ -7036,7 +7037,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:before,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:before,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:before,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:before { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:before {
 
     // no universally applied effect...
     // negate any default effects:
@@ -7051,7 +7052,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $white;
       }
-    } 
+    }
 
     @else if $brand == dribbble or $brand == dribbble-alt {
       content: $dribbble-c1 !important; // pink circle
@@ -7062,7 +7063,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $dribbble-pink;
       }
-    } 
+    }
 
     @else if $brand == ebay {
       content: $ebay-c1 !important; // red "e"
@@ -7073,7 +7074,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $ebay-red;
       }
-    } 
+    }
 
     @else if $brand == email {
       content: $email-c1 !important; // grey envelope shape
@@ -7084,7 +7085,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-mix;
       }
-    } 
+    }
 
     @else if $brand == foursquare {
       content: $foursquare-icon !important; // change btn bg to icon
@@ -7095,7 +7096,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $foursquare-blue;
       }
-    } 
+    }
 
     @else if $brand == github {
       content: $github-c1-alt !important; // black octocat
@@ -7106,7 +7107,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $github-black;
       }
-    } 
+    }
 
     @else if $brand == gmail {
       content: $gmail-c1 !important; // beige envelope
@@ -7117,7 +7118,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-beige;
       }
-    } 
+    }
 
     @else if $brand == gmail-alt {
       content: $gmail-alt-c1 !important; // grey envelope
@@ -7128,7 +7129,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-grey;
       }
-    } 
+    }
 
     // * gmail-lg and gmail-lg-alt in stackicons-social-complete
     // are icon-only by default
@@ -7142,7 +7143,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-beige;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == instagram-alt {
@@ -7154,7 +7155,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-brown;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == instagram-alt2 {
@@ -7166,7 +7167,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-beige;
       }
-    } 
+    }
 
     @else if $brand == imdb {
       content: $imdb-icon-alt !important; // ticket shape
@@ -7177,7 +7178,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $imdb-yellow;
       }
-    } 
+    }
 
     @else if $brand == microsoft {
       content: $microsoft-c1-icon !important; // red
@@ -7188,7 +7189,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $microsoft-red;
       }
-    } 
+    }
 
     @else if $brand == picasa {
       content: $picasa-c1 !important; // red
@@ -7198,7 +7199,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $picasa-red;
       }
-    } 
+    }
 
     @else if $brand == podcast {
       content: $podcast-c1 !important; // grey person
@@ -7209,7 +7210,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $podcast-grey;
       }
-    } 
+    }
 
     @else if $brand == reddit {
       content: $reddit-c1 !important; // white silhouette
@@ -7220,7 +7221,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == slideshare {
       content: $slideshare-c1 !important; // grey icon w screen border
@@ -7231,7 +7232,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $slideshare-grey;
       }
-    } 
+    }
 
     @else if $brand == stackoverflow {
       content: $stackoverflow-c1 !important; // grey tray
@@ -7242,7 +7243,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $stackoverflow-grey;
       }
-    } 
+    }
 
     @else if $brand == windows7 {
       content: $windows7-c1-icon !important; // red
@@ -7253,7 +7254,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $windows7-red;
       }
-    } 
+    }
 
     @else if $brand == youtube or $brand == youtube2 {
       content: $youtube-c1 !important; // screen shape
@@ -7264,7 +7265,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-white;
       }
-    } 
+    }
 
     @else if $brand == youtube-alt {
       content: $youtube-alt-c1 !important; // black "You"
@@ -7276,8 +7277,8 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-black;
       }
-    } 
-  
+    }
+
     // nav elements:
 
     @else if $brand == search-alt {
@@ -7289,12 +7290,12 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $search-grey;
       }
-    } 
+    }
 
-  } // end c1 (:before - 1 of 4 elements) 
+  } // end c1 (:before - 1 of 4 elements)
 
 
-  // .st-shape-icon c1 - do the hover! (:hover:before - 1 of 4 elements) 
+  // .st-shape-icon c1 - do the hover! (:hover:before - 1 of 4 elements)
   .st-shape-icon.st-multi-color .st-icon-#{$brand}:hover:before,
   .st-shape-icon .st-multi-color.st-icon-#{$brand}:hover:before,
   .st-shape-icon.st-multi-color.st-icon-#{$brand}:hover:before,
@@ -7318,8 +7319,8 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:focus:before,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:focus:before,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:focus:before,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:before { 
-    
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:before {
+
     // no universal shadow-effect on hover...
 
     @if $brand == delicious {
@@ -7330,7 +7331,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $white;
       }
-    } 
+    }
 
     @else if $brand == dribbble or $brand == dribbble-alt {
       @include shadow-effect(icon-only-hover);
@@ -7340,7 +7341,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $dribbble-pink;
       }
-    } 
+    }
 
     @else if $brand == ebay {
       @include shadow-effect(icon-only-hover);
@@ -7350,7 +7351,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $ebay-red;
       }
-    } 
+    }
 
     @else if $brand == email {
       @include shadow-effect(icon-only-hover);
@@ -7360,7 +7361,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $email-grey-mix;
       }
-    } 
+    }
 
     @else if $brand == foursquare {
       @include shadow-effect(icon-only-hover);
@@ -7370,7 +7371,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $foursquare-blue;
       }
-    } 
+    }
 
     @else if $brand == github {
       @include shadow-effect(icon-only-hover);
@@ -7380,7 +7381,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $github-black;
       }
-    } 
+    }
 
     @else if $brand == gmail {
       @include shadow-effect(icon-only-hover);
@@ -7390,7 +7391,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-beige;
       }
-    } 
+    }
 
     @else if $brand == gmail-alt {
       @include shadow-effect(icon-only-hover);
@@ -7400,7 +7401,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-grey;
       }
-    } 
+    }
 
     @else if $brand == imdb {
       @include shadow-effect(icon-only-hover);
@@ -7410,7 +7411,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $imdb-yellow;
       }
-    } 
+    }
 
     @else if $brand == instagram {
       @if $multi-color-hover-default == brand-color-hover {
@@ -7419,7 +7420,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-beige;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == instagram-alt {
@@ -7430,7 +7431,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-brown;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == instagram-alt2 {
@@ -7441,7 +7442,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-beige;
       }
-    } 
+    }
 
     @else if $brand == microsoft {
       @include shadow-effect(icon-only-hover);
@@ -7451,7 +7452,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $microsoft-red;
       }
-    } 
+    }
 
     @else if $brand == picasa {
       @include shadow-effect(icon-only-hover);
@@ -7461,7 +7462,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $picasa-red;
       }
-    } 
+    }
 
     @else if $brand == podcast {
       @include shadow-effect(icon-only-hover);
@@ -7471,7 +7472,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $podcast-grey;
       }
-    } 
+    }
 
     @else if $brand == reddit {
       @include shadow-effect(icon-only-hover);
@@ -7481,7 +7482,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $color-multi-color-icon-default;
       }
-    } 
+    }
 
     @else if $brand == slideshare {
       @include shadow-effect(icon-only-hover);
@@ -7491,7 +7492,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $slideshare-grey;
       }
-    } 
+    }
 
     @else if $brand == stackoverflow {
       // @include shadow-effect(icon-only-hover);
@@ -7501,7 +7502,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $stackoverflow-grey;
       }
-    } 
+    }
 
     @else if $brand == windows7 {
       @include shadow-effect(icon-only-hover);
@@ -7511,7 +7512,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $windows7-red;
       }
-    } 
+    }
 
     @else if $brand == youtube or $brand == youtube2 {
       @include shadow-effect(icon-only-hover);
@@ -7521,7 +7522,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-white;
       }
-    } 
+    }
 
     @else if $brand == youtube-alt {
       @include shadow-effect(icon-only-hover);
@@ -7531,8 +7532,8 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-black;
       }
-    } 
-    
+    }
+
     // nav elements:
 
     @else if $brand == search-alt {
@@ -7543,9 +7544,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $search-grey;
       }
-    } 
+    }
 
-  } // end .st-shape-icon c1:hover (:hover span:before - 2 of 4 elements) 
+  } // end .st-shape-icon c1:hover (:hover span:before - 2 of 4 elements)
 
 
   // .st-shape-icon c2 (span:before - 2 of 3 or 4 elements)
@@ -7560,7 +7561,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand} > span:before,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand} > span:before,
   .st-shape-r5.st-multi-color.st-icon-#{$brand} > span:before,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand} > span:before { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand} > span:before {
 
     // negate any default effects:
     text-shadow: none;
@@ -7573,7 +7574,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $delicious-blue;
       }
-    } 
+    }
 
     @else if $brand == dribbble or $brand == dribbble-alt {
       content: $dribbble-c2; // light pink highlight
@@ -7583,7 +7584,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $dribbble-pink-lt;
       }
-    } 
+    }
 
     @else if $brand == ebay {
       content: $ebay-c2; // blue "b"
@@ -7594,7 +7595,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $ebay-blue;
       }
-    } 
+    }
 
     @else if $brand == email {
       content: $email-c2; // envelope flaps
@@ -7604,7 +7605,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: lighten($email-grey-mix, 6);
       }
-    } 
+    }
 
     @else if $brand == foursquare {
       content: $foursquare-c1; // blue diamond
@@ -7616,7 +7617,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $icon-color-foursquare;
         color: rgba($foursquare-blue-dk, 0.50);
       }
-    } 
+    }
 
     @else if $brand == github {
       content: $github-c2; // lt orange face
@@ -7626,7 +7627,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $github-orange-lt;
       }
-    } 
+    }
 
     @else if $brand == gmail {
       content: $gmail-c2; // red "M"
@@ -7636,7 +7637,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-red;
       }
-    } 
+    }
 
     @else if $brand == gmail-alt {
       content: $gmail-alt-c2; // red "M"
@@ -7646,7 +7647,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-alt-red;
       }
-    } 
+    }
 
     //imdb
     @else if $brand == imdb {
@@ -7661,7 +7662,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-tan;
       }
-    } 
+    }
 
     // * in stackicons-social-complete
     @else if $brand == instagram-alt2 {
@@ -7672,7 +7673,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-tan;
       }
-    } 
+    }
 
     @else if $brand == microsoft {
       content: $microsoft-c2-icon; // green
@@ -7683,7 +7684,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $microsoft-green;
       }
-    } 
+    }
 
     @else if $brand == picasa {
       content: $picasa-c2; // yellow
@@ -7693,7 +7694,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $picasa-yellow-mix;
       }
-    } 
+    }
 
     // podcast
     @else if $brand == podcast {
@@ -7706,7 +7707,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $podcast-purple-dk;
         color: $podcast-purple-dk-rgba;
       }
-    } 
+    }
 
     // reddit
     @else if $brand == reddit {
@@ -7717,7 +7718,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $reddit-red;
       }
-    } 
+    }
 
     // slideshare
     @else if $brand == slideshare {
@@ -7728,18 +7729,18 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $slideshare-white-rgba;
       }
-    } 
+    }
 
     // stackoverflow
     @else if $brand == stackoverflow {
-      content: $stackoverflow-c2-alt; 
+      content: $stackoverflow-c2-alt;
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($stackoverflow-orange-mix);
       }
       @else {
         color: $stackoverflow-orange-mix;
       }
-    } 
+    }
 
     @else if $brand == windows7 {
       content: $windows7-c2-icon; // green
@@ -7750,11 +7751,11 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $windows7-green;
       }
-    } 
+    }
 
     @else if $brand == youtube or $brand == youtube2 {
       content: "";
-    } 
+    }
 
     @else if $brand == youtube-alt {
       content: $youtube-alt-c2; // Red Tube shape
@@ -7766,7 +7767,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-red-alt;
       }
-    } 
+    }
 
     // nav elements:
 
@@ -7780,7 +7781,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $search-blue-lt;
         color: $search-blue-lt-rgba;
       }
-    } 
+    }
 
   } // end .st-shape-icon c2 (2 of 3 or 4 elements)
 
@@ -7809,7 +7810,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:focus span:before,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:focus span:before,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:focus span:before,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus span:before { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus span:before {
 
     @if $brand == delicious {
       @if $multi-color-hover-default == brand-color-hover {
@@ -7818,7 +7819,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $delicious-blue;
       }
-    } 
+    }
 
     @else if $brand == dribbble or $brand == dribbble-alt {
       @if $multi-color-hover-default == brand-color-hover {
@@ -7827,7 +7828,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $dribbble-pink-lt;
       }
-    } 
+    }
 
     @else if $brand == ebay {
       @include shadow-effect(icon-only-hover);
@@ -7837,7 +7838,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $ebay-blue;
       }
-    } 
+    }
 
     @else if $brand == email {
       @if $multi-color-hover-default == brand-color-hover {
@@ -7846,7 +7847,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: lighten($email-grey-mix, 12);
       }
-    } 
+    }
 
     @else if $brand == foursquare {
       @if $multi-color-hover-default == brand-color-hover {
@@ -7856,7 +7857,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $icon-color-foursquare;
         color: rgba($foursquare-blue-dk, 0.50);
       }
-    } 
+    }
 
     @else if $brand == github {
       @if $multi-color-hover-default == brand-color-hover {
@@ -7865,7 +7866,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $github-orange-lt;
       }
-    } 
+    }
 
     @else if $brand == gmail {
       @if $multi-color-hover-default == brand-color-hover {
@@ -7874,7 +7875,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-red;
       }
-    } 
+    }
 
     @else if $brand == gmail-alt {
       @if $multi-color-hover-default == brand-color-hover {
@@ -7883,7 +7884,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $gmail-alt-red;
       }
-    } 
+    }
 
     // * instagram-alt2 in stackicons-social-complete
     @else if $brand == instagram or $brand == instagram-alt2 {
@@ -7893,7 +7894,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $instagram-tan;
       }
-    } 
+    }
 
     @else if $brand == microsoft {
       @include shadow-effect(icon-only-hover);
@@ -7903,7 +7904,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $microsoft-green;
       }
-    } 
+    }
 
     @else if $brand == picasa {
       @if $multi-color-hover-default == brand-color-hover {
@@ -7912,7 +7913,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $picasa-yellow-mix;
       }
-    } 
+    }
 
     // podcast
     @else if $brand == podcast {
@@ -7924,7 +7925,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $podcast-purple-dk;
         color: $podcast-purple-dk-rgba;
       }
-    } 
+    }
 
     // reddit
     @else if $brand == reddit {
@@ -7934,7 +7935,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $reddit-red;
       }
-    } 
+    }
 
     // slideshare - no change on hover
 
@@ -7946,7 +7947,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $stackoverflow-orange-mix;
       }
-    } 
+    }
 
     @else if $brand == windows7 {
       @include shadow-effect(icon-only-hover);
@@ -7956,7 +7957,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $windows7-green;
       }
-    } 
+    }
 
     @else if $brand == youtube-alt {
       @include shadow-effect(icon-only-hover);
@@ -7966,7 +7967,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $youtube-red-alt;
       }
-    } 
+    }
 
     // nav elements:
 
@@ -7979,7 +7980,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $search-blue-lt;
         color: $search-blue-lt-rgba;
       }
-    } 
+    }
 
   } // end .st-shape-icon c2:hover (3 of 3 or 4 elements)
 
@@ -7996,8 +7997,8 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand} > span:after,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand} > span:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand} > span:after,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand} > span:after { 
-  
+  .st-multi-color .st-shape-r5.st-icon-#{$brand} > span:after {
+
     // negate any default effects:
     text-shadow: none;
 
@@ -8009,7 +8010,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $delicious-grey;
       }
-    } 
+    }
 
     @else if $brand == dribbble-alt {
       content: $dribbble-c4; // grey shadow (optional)
@@ -8021,7 +8022,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $dribbble-grey;
         color: $dribbble-grey-rgba;
       }
-    } 
+    }
 
     @else if $brand == ebay {
       content: $ebay-c3; // yellow "a"
@@ -8096,7 +8097,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
     }
 
     @else if $brand == instagram {
-      content: $instagram-c4; // lens (optional) 
+      content: $instagram-c4; // lens (optional)
       // content: $instagram-c4-alt; // lens & flash (optional)
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($instagram-black);
@@ -8119,7 +8120,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $instagram-black;
         color: $instagram-black-rgba;
       }
-    } 
+    }
 
     // * instagram-alt2 unchanged in icon-only
 
@@ -8132,7 +8133,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $microsoft-yellow;
       }
-    } 
+    }
 
     @else if $brand == picasa {
       content: $picasa-c3; // blue
@@ -8142,14 +8143,14 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $picasa-blue-mix;
       }
-    } 
+    }
 
     // podcast - content: ""
 
     // reddit - content: ""
 
     @else if $brand == slideshare {
-      content: $slideshare-c2; // blue person 
+      content: $slideshare-c2; // blue person
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($slideshare-blue);
       }
@@ -8159,7 +8160,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
     } // end slideshare
 
     @else if $brand == stackoverflow {
-      content: $stackoverflow-c3;  
+      content: $stackoverflow-c3;
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($stackoverflow-grey-mix);
       }
@@ -8177,9 +8178,9 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $windows7-yellow;
       }
-    } 
+    }
 
-    @else if $brand == youtube or $brand == youtube2 { 
+    @else if $brand == youtube or $brand == youtube2 {
       content: $youtube-c3; // inset shadow (optional)
       @if $multi-color-default == brand-color-variant {
         @include adjust-multi-color($youtube-grey);
@@ -8223,7 +8224,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-icon.st-multi-color .st-icon-#{$brand}:hover span:after,
   .st-shape-icon .st-multi-color.st-icon-#{$brand}:hover span:after,
   .st-shape-icon.st-multi-color.st-icon-#{$brand}:hover span:after,
-  .st-multi-color .st-shape-icon.st-icon-#{$brand}:hover span:after,  
+  .st-multi-color .st-shape-icon.st-icon-#{$brand}:hover span:after,
   .st-shape-icon.st-multi-color .st-icon-#{$brand}:focus span:after,
   .st-shape-icon .st-multi-color.st-icon-#{$brand}:focus span:after,
   .st-shape-icon.st-multi-color.st-icon-#{$brand}:focus span:after,
@@ -8231,7 +8232,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-rounded5.st-multi-color .st-icon-#{$brand}:hover span:after,
   .st-shape-rounded5 .st-multi-color.st-icon-#{$brand}:hover span:after,
   .st-shape-rounded5.st-multi-color.st-icon-#{$brand}:hover span:after,
-  .st-multi-color .st-shape-rounded5.st-icon-#{$brand}:hover span:after,  
+  .st-multi-color .st-shape-rounded5.st-icon-#{$brand}:hover span:after,
   .st-shape-rounded5.st-multi-color .st-icon-#{$brand}:focus span:after,
   .st-shape-rounded5 .st-multi-color.st-icon-#{$brand}:focus span:after,
   .st-shape-rounded5.st-multi-color.st-icon-#{$brand}:focus span:after,
@@ -8239,11 +8240,11 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:hover span:after,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:hover span:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:hover span:after,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:hover span:after,  
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:hover span:after,
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:focus span:after,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:focus span:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:focus span:after,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus span:after { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus span:after {
 
     @if $brand == delicious {
       @if $multi-color-hover-default == brand-color-hover {
@@ -8252,7 +8253,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $delicious-grey;
       }
-    } 
+    }
 
     @else if $brand == dribbble-alt {
       @if $multi-color-hover-default == brand-color-hover {
@@ -8263,7 +8264,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         color: $dribbble-grey;
         color: $dribbble-grey-rgba;
       }
-    } 
+    }
 
     @else if $brand == ebay {
       @include shadow-effect(icon-only-hover);
@@ -8325,8 +8326,8 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
     } // end gmail-alt
 
     // * instagram-alt, -alt2 in stackicons-social-complete
-    @else if $brand == instagram or 
-             $brand == instagram-alt or 
+    @else if $brand == instagram or
+             $brand == instagram-alt or
              $brand == instagram-alt2 {
       @if $multi-color-hover-default == brand-color-hover {
         @include adjust-multi-color-hover($white);
@@ -8438,7 +8439,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:after,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:after,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:after { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:after {
 
     // negate any default effects:
     text-shadow: none;
@@ -8494,7 +8495,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         @include adjust-multi-color($github-blue-lt-rgba);
       }
       @else {
-        color: $github-blue-lt; 
+        color: $github-blue-lt;
         color: $github-blue-lt-rgba;
       }
     } // end github
@@ -8622,7 +8623,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-icon.st-multi-color .st-icon-#{$brand}:hover:after,
   .st-shape-icon .st-multi-color.st-icon-#{$brand}:hover:after,
   .st-shape-icon.st-multi-color.st-icon-#{$brand}:hover:after,
-  .st-multi-color .st-shape-icon.st-icon-#{$brand}:hover:after,  
+  .st-multi-color .st-shape-icon.st-icon-#{$brand}:hover:after,
   .st-shape-icon.st-multi-color .st-icon-#{$brand}:focus:after,
   .st-shape-icon .st-multi-color.st-icon-#{$brand}:focus:after,
   .st-shape-icon.st-multi-color.st-icon-#{$brand}:focus:after,
@@ -8630,7 +8631,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-rounded5.st-multi-color .st-icon-#{$brand}:hover:after,
   .st-shape-rounded5 .st-multi-color.st-icon-#{$brand}:hover:after,
   .st-shape-rounded5.st-multi-color.st-icon-#{$brand}:hover:after,
-  .st-multi-color .st-shape-rounded5.st-icon-#{$brand}:hover:after,  
+  .st-multi-color .st-shape-rounded5.st-icon-#{$brand}:hover:after,
   .st-shape-rounded5.st-multi-color .st-icon-#{$brand}:focus:after,
   .st-shape-rounded5 .st-multi-color.st-icon-#{$brand}:focus:after,
   .st-shape-rounded5.st-multi-color.st-icon-#{$brand}:focus:after,
@@ -8638,11 +8639,11 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:hover:after,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:hover:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:hover:after,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:hover:after,  
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:hover:after,
   .st-shape-r5.st-multi-color .st-icon-#{$brand}:focus:after,
   .st-shape-r5 .st-multi-color.st-icon-#{$brand}:focus:after,
   .st-shape-r5.st-multi-color.st-icon-#{$brand}:focus:after,
-  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:after { 
+  .st-multi-color .st-shape-r5.st-icon-#{$brand}:focus:after {
 
     @if $brand == delicious {
       @if $multi-color-hover-default == brand-color-hover {
@@ -8670,7 +8671,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       @else {
         color: $ebay-green;
       }
-    } 
+    }
 
     @else if $brand == foursquare {
       @if $multi-color-hover-default == brand-color-hover {
@@ -8690,7 +8691,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
         @include adjust-multi-color-hover($github-blue-lt-rgba);
       }
       @else {
-        color: $github-blue-lt; 
+        color: $github-blue-lt;
         color: $github-blue-lt-rgba;
       }
     } // end github
@@ -8797,7 +8798,7 @@ email-alt, email-alt2, gmail-lg, gmail-lg-alt, instagram-alt, instagram-alt2, pi
       }
     } // end youtube
 
-    // youtube-alt has only 3 elements 
+    // youtube-alt has only 3 elements
 
   } // end .st-shape-icon c4:hover (:hover:after - 4 of 4 elements)
 

@@ -6,9 +6,9 @@
 
 @font-face {
   font-family: 'Stackicons-Social';
-  src: url("../fonts/Stackicons/Stackicons-Social.eot");
+  src: url("#{$stackicons-font-path}/Stackicons-Social.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/Stackicons/Stackicons-Social.eot?#iefix") format("embedded-opentype"), url("../fonts/Stackicons/Stackicons-Social.woff") format("woff"), url("../fonts/Stackicons/Stackicons-Social.ttf") format("truetype"), url("../fonts/Stackicons/Stackicons-Social.svg#76cc4077294aa89eeb6c5fa684bb9048") format("svg");
+  src: url("#{$stackicons-font-path}/Stackicons-Social.eot?#iefix") format("embedded-opentype"), url("#{$stackicons-font-path}/Stackicons-Social.woff") format("woff"), url("#{$stackicons-font-path}/Stackicons-Social.ttf") format("truetype"), url("#{$stackicons-font-path}/Stackicons-Social.svg#76cc4077294aa89eeb6c5fa684bb9048") format("svg");
   /* Legacy iOS */
   font-style: normal !important;
   font-weight: 400 !important;
@@ -17,4 +17,3 @@
   font-smoothing: antialiased;
   speak: none;
 }
-
