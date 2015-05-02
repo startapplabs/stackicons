@@ -5,7 +5,7 @@
 @charset "UTF-8";
 
 // Define font path, that way we can change it if needed
-$stackicons-font-path: "../fonts/Stackicons";
+$stackicons-font-path: "../fonts/Stackicons" !default;
 
 // font
 @import "fonts-stackicons-social"; // make sure the font path in this file is right
