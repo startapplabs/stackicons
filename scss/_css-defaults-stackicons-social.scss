@@ -231,7 +231,7 @@ $raise-on-hover: false; // false = don't raise
   .st-icon:hover:#{$pseudo-default},
   [class^="st-icon-"]:focus:#{$pseudo-default},
   [class^="st-icon-"]:hover:#{$pseudo-default} {
-    @extend .raised;
+   @extend .raised !optional;
   }
 
   .st-icon:active:#{$pseudo-default},
