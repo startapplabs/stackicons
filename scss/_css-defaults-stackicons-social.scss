@@ -262,7 +262,7 @@ $raise-on-hover: false; // false = don't raise
 [class^="st-icon-"].raise-on-hover:focus:#{$pseudo-default},
 [class^="st-icon-"].raise-on-hover:hover:#{$pseudo-default},
 [class^="st-icon-"].raise-on-hover:focus:#{$pseudo-default} {
-  @extend .raised;
+  @extend .raised !optional;
 }
 
 .raise-on-hover .st-icon:active,
